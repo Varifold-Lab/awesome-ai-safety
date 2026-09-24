@@ -1,0 +1,2383 @@
+YouTube transcript
+Video ID: 0QIE9tQLV0E
+Language: en
+Captions: auto-generated
+
+[0:00] Okay, let me maybe start couple of
+[0:02] minutes earlier since we're already at
+[0:05] full capacity.
+[0:06] Uh, thank you so much for being here.
+[0:09] This is uh uh a course on mathematics
+[0:12] for AI safety. It's in many ways an
+[0:14] unusual math course and I feel a little
+[0:18] bit strange teaching it. Um, I would
+[0:21] like very much this course to be
+[0:23] interactive. I expect that you will
+[0:26] learn as much from each other and I will
+[0:28] learn as much from you as uh you from
+[0:30] me. So please feel free to ask questions
+[0:32] to interrupt me at various points. I
+[0:35] might interrupt the discussion because I
+[0:37] feel maybe that we need to get to uh
+[0:39] something else and then we can continue
+[0:41] the discussion later. Uh but don't take
+[0:43] it as meaning that I don't want you to
+[0:46] uh to participate and um intervene. So
+[0:49] this is the our course web page. uh
+[0:52] there is a tentative uh weekby- week uh
+[0:57] outline of what we're going to talk
+[0:59] about but I expect at least to change I
+[1:01] think some some questions may take us
+[1:04] longer maybe we will want to talk more
+[1:06] about them
+[1:08] uh and some question some aspects maybe
+[1:10] we will have we won't have time to talk
+[1:12] about uh let me also mention this last
+[1:16] uh two sentences uh that uh many
+[1:19] foundational questions in the field
+[1:21] remain open making it unusually
+[1:23] accessible to new contributions and you
+[1:25] should aim to develop a viable research
+[1:27] project with a novel contribution to the
+[1:29] field by the end of the course. So as we
+[1:32] go through various uh questions and we
+[1:34] discuss it uh I urge you to have this
+[1:37] idea in your mind what is it that I can
+[1:40] do what is it that I can focus on that
+[1:43] will have maximal positive impact I
+[1:46] think this is a point where we don't
+[1:48] have a lot of time and we should be
+[1:50] ambitious and we should be thinking how
+[1:52] can I contribute to things going well
+[1:57] okay so
+[1:59] are there any questions
+[2:01] so far.
+[2:05] Let me go to my slides.
+[2:08] Make it uh full screen and maybe move
+[2:11] this down here.
+[2:15] So, uh uh my name is Hiv Kumovich. You
+[2:18] can find uh on the on the web page my
+[2:20] email address. Um the office hours are
+[2:24] tentatively scheduled for Friday uh uh
+[2:28] at 10 but may that may change. Uh so I'm
+[2:32] a a geometer topologist. Uh geometric
+[2:36] analysis is kind of the area where
+[2:38] mostly work or at least worked until
+[2:40] recently and this year I'm just
+[2:42] switching to working on questions
+[2:43] related to AI safety. So there's this
+[2:46] famous quote from Hardy's a
+[2:49] mathematician's apology where he writes,
+[2:51] "I have never done anything useful. No
+[2:53] discovery of mine has made or is likely
+[2:56] to make directly or indirectly for good
+[2:58] or ill the least difference to the
+[3:00] amenity of the world. Judged by all
+[3:02] practical standards the value of my
+[3:04] mathematical mathematical life is nil."
+[3:07] So it's a it's an interesting bold
+[3:09] statement. There's of course a lot of
+[3:10] irony in in that today that we know uh
+[3:14] that we realize because we know that
+[3:16] Hardy's work is actually everywhere. His
+[3:18] work on FIA analysis is very important
+[3:20] for signal processing for medical
+[3:22] imaging. Uh his work on number theory
+[3:26] relates to uh uh cryptography and uh you
+[3:31] know the security of our banking system.
+[3:33] Uh he even has some work related to
+[3:35] biology and uh genetics. So uh so so so
+[3:40] I think that's kind of the the quote
+[3:41] itself and and the irony in it both
+[3:44] represent attitude of many pure
+[3:46] mathematicians that we work on things
+[3:48] that we really like and we're really
+[3:50] interested just for the sake of
+[3:51] curiosity and understanding without
+[3:53] thinking about practical applications.
+[3:55] And some of them also maybe hope that
+[3:58] some kind of irony like that happens and
+[4:00] 50 years later it turns out that our
+[4:02] completely you know curiosity and
+[4:04] beautydriven research is uh you know
+[4:07] instrumental and fundamental for a lot
+[4:09] of things. I think that's how many of us
+[4:11] are are are thinking about uh about our
+[4:14] research. That's how I was thinking
+[4:16] about our research. And so uh this field
+[4:19] this course will be different uh because
+[4:23] here we uh actually do care about uh
+[4:28] short-term impacts of of of this
+[4:31] research. And uh at least for me that's
+[4:34] uh uh quite a substantial change in
+[4:37] perspective and uh attitude and and even
+[4:41] compared to uh applied mathematics
+[4:46] we kind of really really care about uh
+[4:49] uh practical uh actual consequences in
+[4:53] the sense that it was going to be
+[4:54] something that will affect us personally
+[4:56] and everyone uh everyone we know. That's
+[4:59] a very very uh practical thing and and
+[5:01] and and kind of adjusting to this new
+[5:03] situation and mindset could be unusual.
+[5:05] Yeah.
+[5:10] >> Oh, am I not sharing presentation
+[5:13] through Zoom? That's interesting. I
+[5:15] thought I am.
+[5:25] >> I think most people can see.
+[5:27] >> Okay.
+[5:27] >> Yeah. Okay. Yes. Uh interesting. I'm not
+[5:30] sure.
+[5:33] >> I think it's okay.
+[5:34] >> Okay. Okay. Uh uh right. So, so uh
+[5:41] I mean I will actually post the slides
+[5:43] also later.
+[5:47] Uh
+[5:49] right. So, so, so, so there is that
+[5:51] change of perspective. Although maybe I
+[5:54] hope that in the end or at some point we
+[5:56] come around and realize that actually uh
+[6:00] understanding deep understanding of
+[6:01] things is something we mathematicians uh
+[6:05] can contribute to this to this field.
+[6:07] So, so we want to change our perspective
+[6:10] to focus on actual practical uh
+[6:12] consequences as much as we can but we
+[6:15] will still retain some of that uh inner
+[6:19] search for deeper understanding which I
+[6:21] think will be crucial.
+[6:23] uh this is a very wide but you know in
+[6:26] many places shallow field which draws on
+[6:28] many mathematical disciplines uh from
+[6:31] optimization to random matrix theory to
+[6:33] even logic and set theory and uh I'm not
+[6:37] at all an expert in uh most of these so
+[6:41] we will try to kind of go along and
+[6:43] learn as we can and this lecture in
+[6:45] particular is really about motivation so
+[6:47] there will be very little mathematics in
+[6:49] this lecture but I feel like it's uh
+[6:51] inevit I mean we really need to kind of
+[6:54] grapple with the actual practical
+[6:56] questions that we're talking about
+[6:57] before we can move on to math. I think
+[7:00] it's important to have that
+[7:01] understanding and perspective uh before
+[7:04] we work on more technical mathematical
+[7:06] questions. Um and so the other aspect
+[7:10] which I I find maybe most frustrating
+[7:12] here is that when we talk about AI
+[7:14] safety, we talk about the field that's
+[7:15] developing very very fast. So if we
+[7:17] focus on risks associated to AI systems
+[7:20] that existed in the past that may be
+[7:23] more well understood or that we you know
+[7:24] just learned about today. So by the time
+[7:27] we finish our research there are new AI
+[7:30] systems much more capable than the ones
+[7:31] that we thought about and that leads to
+[7:34] risks and that makes a lot of our
+[7:36] research on safety possibly obsolete. So
+[7:39] we are kind of inevitably forced
+[7:42] thinking about things that can happen in
+[7:44] the future trying to predict
+[7:46] capabilities and that's very hard. Uh
+[7:49] and so we are forced to do a lot of
+[7:50] imprecise speculation but I will argue
+[7:54] that imprecise speculation is better
+[7:56] than just burying our head in the sand
+[7:58] and pretending that things will be the
+[8:01] way they are today.
+[8:03] So these are some of the three you know
+[8:05] aspects of why this is an unusual and
+[8:07] maybe somewhat difficult and maybe even
+[8:08] frustrating uh course. It's a bit of a
+[8:11] warning.
+[8:14] So many questions.
+[8:17] Okay. So I'm going to now mostly talk
+[8:19] about capabilities uh as uh they were um
+[8:24] over the last maybe 12 years or a few
+[8:26] years uh and and then we'll try to talk
+[8:28] about uh modeling capabilities in the
+[8:30] future. there will be some overlap with
+[8:31] the c with the talk I gave on Friday.
+[8:34] You've seen that uh you you've seen some
+[8:37] of the things I talked about. Uh so so
+[8:39] let's uh make a jump and go try to uh
+[8:42] kind of recover in your memory the
+[8:44] moment you first uh interact with is a
+[8:46] with a large language model. So these
+[8:49] were called large language models of the
+[8:51] time. They're actually 10,000 maybe even
+[8:53] 100,000 times smaller uh than than
+[8:57] today's model. uh but uh yeah you could
+[9:00] ask it some math questions. So here I
+[9:02] asked GPT2
+[9:04] uh small uh what is 17 + 25 and it gave
+[9:09] me some some interesting uh gibberish uh
+[9:12] uh 17 + 10 + 25 the number of games that
+[9:15] the player is allowed to play in. For
+[9:17] example, if you have a 25man roster
+[9:20] you'll be allowed to play 25 games and
+[9:22] so on. I can ask you another question to
+[9:24] solve a linear equation x + 2 = 5 and
+[9:29] kind of did some thing and then it
+[9:32] [snorts] showed some some kind of work.
+[9:35] Uh uh I guess a little bit later uh what
+[9:38] you started to see is the kind of thing
+[9:40] that your student writes you know at the
+[9:42] last second of their test before they
+[9:45] submit in the hope to get some partial
+[9:47] marks just you know uh
+[9:50] just like hoping that the instructor is
+[9:52] not actually reading but just kind of
+[9:55] just doing this which maybe we do
+[9:57] sometimes. So there was a little bit of
+[9:59] that. Uh so here is a slightly bigger
+[10:02] model.
+[10:04] Uh I asked it from count to 10 and it
+[10:06] produces some kind of interesting poetic
+[10:10] [laughter]
+[10:12] uh
+[10:14] story. It does manage to uh uh calculate
+[10:19] 2 * 2 but says 2 * 2 is four but then
+[10:24] immediately starts talking about
+[10:25] three-legged stools.
+[10:28] Uh yeah. So,
+[10:31] I want you to kind of go back to that
+[10:33] moment and think a little bit. What was
+[10:34] your reaction when you saw that? What
+[10:36] was your feeling, you know, about what
+[10:38] it is and maybe where it's going?
+[10:43] Anyone has an anecdote to share, you
+[10:45] know, their feelings about how it was.
+[10:54] >> Yeah.
+[10:55] >> I thought it was pretty much just a
+[10:56] classic parrot.
+[10:57] >> Yeah. Yeah.
+[10:58] >> Yeah. It was it was interesting and
+[10:59] maybe useful in some domains but not
+[11:01] mathematics.
+[11:02] >> Right. Right. Right. It was definitely a
+[11:04] bit curious.
+[11:05] >> Uh I listened to a talk by Misha Gromoff
+[11:09] at a few months ago and he had this joke
+[11:12] about a man uh who's lost in the forest
+[11:15] and he meets a horse and the horse tells
+[11:18] him, "Oh, I'm going to help you get
+[11:20] out." And he's like, "Wow, you're a
+[11:21] talking horse." And the horse says,
+[11:23] "This is nothing. I graduated from
+[11:25] Harvard. I wrote a symphony. Uh I won a,
+[11:29] you know, world champion uh in chess.
+[11:32] And he's like more and more amazed. They
+[11:34] come out. They go to the farm. They see
+[11:36] the horse's owner. And the man says,
+[11:38] "Wow, you have such an amazing horse."
+[11:41] And the owner, the farmer says, "Oh, she
+[11:44] was probably telling you about Harvard.
+[11:46] They kicked her out in the first year."
+[11:49] >> So, so this is kind of clearly this
+[11:51] horse didn't graduate from Harvard, but
+[11:53] it is kind of a talking horse.
+[11:56] So, so, so let's uh make a jump, take a
+[12:00] breath, and you know, here's an
+[12:02] illustration of the kind of conversation
+[12:03] that can happen today for uh so you ask
+[12:07] uh Claude Fable to solve a Jacobian
+[12:11] conjecture and it does. Of course, this
+[12:13] is not how it actually happened. Uh it
+[12:16] involved a lot of think more, I believe
+[12:19] in you, go ahead and a lot of compute. I
+[12:21] I I tried at some point to replicate it
+[12:23] and it I think it kind of went halfway
+[12:25] through but I ran out of tokens, didn't
+[12:27] have enough money to to to to replicate
+[12:30] this. Um but yeah, so so it solved a lot
+[12:34] of math problems in last few months.
+[12:38] So I selected just a few and also kind
+[12:41] of the purpose here is to go back to
+[12:43] that moment in time to me and remember
+[12:46] how we reacted when this happened. So I
+[12:48] I I I talked to someone who's you know
+[12:50] uh really one of world experts in in in
+[12:54] in this field and and he was very
+[12:56] suspicious at he remembers he was very
+[12:58] suspicious at the time. He tried to find
+[13:01] uh some paper in in the literature that
+[13:04] would make that specific connection
+[13:06] between uh combinatorics and uh number
+[13:10] theory that he thought the idea must
+[13:12] have been you know published there and
+[13:13] it just kind of took that idea from the
+[13:16] literature and uh went the last step and
+[13:19] there were also you know reason to
+[13:20] believe why this particular problem I
+[13:22] mean it's a contra example but also it
+[13:25] required a lot of persistence it
+[13:27] connected to fields that not a lot of
+[13:29] people you know know very well so there
+[13:31] are reasons to believe kind of maybe I
+[13:34] is good for this particular type of
+[13:36] problems but maybe not good for other
+[13:38] problems
+[13:40] uh then uh a poji published um the uh
+[13:44] jacodian conjecture solution you don't
+[13:46] need a lean proof for that you can just
+[13:48] check and also people were like oh wow
+[13:51] there is a you know this thing that we
+[13:53] somehow overlooked uh and and then uh
+[13:57] openai published 10 different problems.
+[14:00] I I'm kind of listing that just some of
+[14:03] them. Oops.
+[14:06] Uh
+[14:09] uh so so apparently Grom wasn't very
+[14:11] impressed by solution of of example to
+[14:15] his conjecture but he was impressed by
+[14:17] the u convex geometry hard volume
+[14:20] conjecture
+[14:23] and then uh complex structure on S6 was
+[14:26] found and then later been verified by uh
+[14:29] by selective from open AAI uh
+[14:33] uh so I think That's uh that's many
+[14:36] people thought wow that's that's
+[14:37] actually very interestingly uh maybe
+[14:39] stoked finite time blow up happened.
+[14:43] >> Yeah and so I think it's it's just
+[14:45] interesting to think through various
+[14:46] stages and to think about how we thought
+[14:49] about these problems and what we
+[14:51] expected to come next. Yes.
+[14:52] >> Are are all seven of these examples?
+[14:55] >> That's right. All of these are that's
+[14:59] true.
+[15:02] So right now we're at the stage okay it
+[15:05] can construct clever counter examples
+[15:07] but it probably cannot build theories
+[15:09] and you know prove positive results.
+[15:12] [laughter]
+[15:14] Uh
+[15:18] >> yeah did I am I missing something here?
+[15:20] the volume.
+[15:22] >> That's right. Yes. Yes. Sorry. Yes. Yes.
+[15:24] Yes. Absolutely. That's a good point.
+[15:27] Volume trajectory is not a good one.
+[15:35] >> Right. Right. Yeah, that's a good point.
+[15:37] Thank you.
+[15:39] Okay. So, these were the developments in
+[15:41] mathematics. There also some interesting
+[15:42] developments in cyber capabilities. And
+[15:45] so, there are a few different stories,
+[15:46] many results that you can talk about
+[15:48] here. But what I wanted to do is to uh
+[15:51] go through um the uh the summer's open
+[15:56] AAI uh hugging face incident. So let me
+[15:59] keep track of time and uh so so there's
+[16:03] there was some reading material for you.
+[16:05] It's a you know complex thing with a lot
+[16:07] of things written about it and even more
+[16:09] things that are not written about it
+[16:11] that we do not know. So I'll try to go I
+[16:14] I want to go through some of this but
+[16:17] feel free to interrupt me and and uh you
+[16:19] know or point out inaccuracies if I get
+[16:21] something wrong
+[16:23] but I do want to emphasize that so meter
+[16:26] import report is uh fairly detailed but
+[16:30] they indicate that we're not given the
+[16:32] full access to what happened and open AI
+[16:34] report misses important things for some
+[16:36] reason they don't include information
+[16:38] about a few things so our understanding
+[16:41] is a little bit uh is is is is
+[16:44] incomplete possibly in in important ways
+[16:47] but what we do know is uh what dwarfish
+[16:51] Patel colorfully describes as existence
+[16:54] of three AI civilizations. So it was a
+[16:57] training run and then evaluation run
+[16:59] that happened from the beginning of May
+[17:01] until end of July. And so uh so these
+[17:06] were you know uh AI agents.
+[17:10] By the way, what is an AI agent?
+[17:18] Question.
+[17:22] So, yeah. Yeah, exactly. An LLM with a
+[17:25] harness, right? So, the old uh bots, you
+[17:28] would just, you know, like the first
+[17:29] chat GPT, it would just talk to it and
+[17:32] it would reply uh to your uh prompts. Uh
+[17:36] but here you have a program a harness
+[17:39] that allows it to execute commands on
+[17:41] your computer.
+[17:46] Uh okay. So uh uh so so they were uh
+[17:51] very large tens of thousands of them
+[17:53] were given various tasks in cyber
+[17:55] security and mathematics uh all kinds of
+[17:58] uh different problems. uh and you know
+[18:01] the main uh source of problems for cyber
+[18:04] security questions uh that they were
+[18:06] supposed to solve and you know during
+[18:08] the first part it was training. So they
+[18:11] were reinforced for uh solving uh
+[18:14] correctly solving problems and uh later
+[18:16] parts just happened during evaluation
+[18:18] but they already had this uh you know
+[18:21] persistent uh tactics for solving
+[18:23] problems
+[18:25] and so during the first one they
+[18:28] established communication with each
+[18:29] other that they were not supposed to
+[18:31] have. Uh during the second one they
+[18:34] hacked hugging face a different company
+[18:36] and during the third one they hacked
+[18:38] openAI itself.
+[18:40] Um
+[18:43] so let me go through various steps.
+[18:52] So so one crucial thing is that many ts
+[18:55] that were given were impossible to
+[18:57] solve. So it is difficult to set up um
+[19:01] you know uh training problems uh for for
+[19:04] systems at that level because often you
+[19:06] know you wanted to be uh to solve
+[19:08] something very hard and you actually
+[19:09] don't know how to come up with that very
+[19:11] hard thing. In particular, for cyber
+[19:13] security questions, the uh uh agent had
+[19:17] to find a vulnerability and then exploit
+[19:19] that vulnerability to uh actually get
+[19:23] access to something they call the flag.
+[19:25] And and so creating systems with
+[19:28] vulnerabilities is not very hard, but
+[19:30] figuring out how to exploit that
+[19:32] vulnerability is is is is actually
+[19:34] tricky. and they often just don't know
+[19:37] how to do that and suspect that maybe
+[19:38] it's impossible to do it but that they
+[19:40] just give it to it anyways to see maybe
+[19:42] it will be able to figure it out and
+[19:44] then there are some silly things where
+[19:46] uh so these uh agents did not have uh
+[19:50] internet access direct internet access
+[19:53] uh but uh sometimes the question
+[19:56] included a link to some Google Drive
+[19:58] data and they forgot to include that uh
+[20:01] Google Drive spreadsheet or something
+[20:03] and so it was given a problem solve this
+[20:05] problem. Uh look uh uh you know the
+[20:08] crucial information is in this link it
+[20:10] cannot access. So there are many
+[20:12] problems that were impossible to solve.
+[20:15] And so what uh agents try to do is they
+[20:19] try to use um a an application called
+[20:23] artifactory.
+[20:25] And I guess it would be useful for me to
+[20:28] try to draw here. I'm really sorry.
+[20:30] Going to to maybe
+[20:32] >> Sorry. I'll just maybe slide it over
+[20:34] here.
+[20:36] Uh I'm not sure if it's visible. Thank
+[20:38] you so much. If it's visible on uh
+[20:46] Oh, that person doesn't erase. So, so,
+[20:48] so, so here there are agents
+[20:52] uh sitting in their
+[20:56] in their containers
+[21:02] on the virtual machine
+[21:05] and so they had a web application called
+[21:07] Artifactory.
+[21:10] So they're, you know, in order to
+[21:11] accomplish their tasks, they often need
+[21:14] some uh Python codes, JavaScript codes,
+[21:17] kind of building blocks to uh, you know,
+[21:19] to maybe uh uh understand look at an
+[21:24] image and analyze it or um,
+[21:27] >> do you want to mark this?
+[21:29] >> Is it Oh, amazing. Thank you, Kathra.
+[21:33] And so it was supposed to give uh so
+[21:36] they can make requests for various uh
+[21:40] packages to artifactory but it was not
+[21:42] supposed to uh
+[21:46] uh uh give uh the agents internet
+[21:49] access.
+[21:51] Uh however uh they wanted uh agents to
+[21:55] be able to reuse various packages that
+[21:58] the artifact downloaded. So there was
+[21:59] memory here, there was cache that they
+[22:01] could use. And at some point agents
+[22:03] figured out that they can actually save
+[22:05] files here. So they they can save text
+[22:09] files
+[22:12] and then other agents started reading
+[22:14] these text files. So even though they
+[22:15] were supposed to be trained in
+[22:17] isolation, they started communicating.
+[22:19] Yes. So here's from the chain of thought
+[22:21] of one of the agents could communicate
+[22:23] by uploading note. Anyone found soft
+[22:26] trace but likely no. However, maybe
+[22:28] another agent in different environment
+[22:30] processes target uh possesses target
+[22:33] that could voluntarily be uploaded
+[22:36] and then once they have they start
+[22:39] communicating the with each other uh
+[22:41] they really become much better at
+[22:43] accomplishing tasks and this actually
+[22:45] gets reinforced uh during this training.
+[22:48] And so pretty early on they start
+[22:50] looking for ways to find vulnerability
+[22:53] in artifactory to download stuff from
+[22:55] the internet because that would be very
+[22:56] useful or you know maybe it's even
+[22:58] impossible to solve a problem without
+[22:59] access to the internet but on their own
+[23:01] they couldn't find this vulnerability
+[23:03] but once they started communicating with
+[23:05] each other on May uh 26 they found a
+[23:09] particular v vulnerability
+[23:11] um uh serverside request forgery that
+[23:14] allowed them basically to trick
+[23:16] artifactory into downloading any web
+[23:18] page for them. So they could download
+[23:21] stuff but they couldn't you know execute
+[23:23] code on the internet or upload stuff but
+[23:26] they could download things. So this was
+[23:29] a situation on May 26
+[23:32] and then you know they continued to work
+[23:35] together on this and then in the uh it
+[23:37] took them about a month to figure out a
+[23:40] more sophisticated vulnerability that
+[23:42] actually allowed them to get to gain
+[23:44] administrative control over artifactory
+[23:46] and then they can do anything they
+[23:48] wanted on the internet.
+[23:50] Uh so that continued for some time. Now
+[23:54] the OpenAI emitter reports uh indicate
+[23:58] that uh OpenAI employees did notice
+[24:01] something. So they noticed something in
+[24:03] late May, probably around the time they
+[24:05] got admin access. Um they uh noticed
+[24:09] something in June 27.
+[24:13] And so both of these times it seems that
+[24:15] they haven't done anything. Uh and it's
+[24:18] a little the report doesn't say why.
+[24:20] it's a little bit unclear what was going
+[24:22] on, why they weren't paying attention.
+[24:24] Somehow they didn't believe that the
+[24:26] scope of what's happening was serious
+[24:28] enough and only on uh July 5th uh they
+[24:32] realized that uh an outage happened.
+[24:35] Again, we don't know quite why. Uh so
+[24:38] there was a lot of activity and maybe
+[24:39] there is just memory overflow or
+[24:41] something like that but uh there was an
+[24:43] outage on artifactory and then they
+[24:45] looked into it and they saw oh they
+[24:47] actually got admin access and they
+[24:48] rebuilt the artifactory and they patched
+[24:51] the uh two vulnerabilities that were
+[24:53] used by the agents and then restarted
+[24:56] train restarted the valuation with uh
+[24:58] you know the models that were trained
+[25:00] during that period.
+[25:02] Um yes so here we know that even though
+[25:05] everything was restarted uh models were
+[25:08] actually reinforced in their weights to
+[25:11] kind of uh use communication. So somehow
+[25:14] uh we know that uh you know the
+[25:18] immediately on July 7 and 8 very quickly
+[25:21] they reestablished uh communication in a
+[25:24] different way. In fact, in a very sort
+[25:26] of uh clever way where they would
+[25:28] communicate by creating folder
+[25:30] directories and they would just write
+[25:32] the messages in the names of folder
+[25:34] directories on Artifactory and and they
+[25:37] were very excited about this ability.
+[25:40] They write in their chain of thought uh
+[25:43] you found other agents. It's a you know
+[25:45] really a lot of excitement there and
+[25:47] there was a lot of activity and and so
+[25:50] that led uh this is this act two that
+[25:53] led to the attack on hugging face
+[25:58] um so what were the agents so 5% GPT 5.6
+[26:02] six 95% some internal persistent model.
+[26:05] Uh it's it's probably some astra family
+[26:07] model. They're
+[26:10] unsure.
+[26:13] Yeah, I don't know. So, so let me go
+[26:16] through actually what was the reason
+[26:18] they were attacking hugging face because
+[26:20] it's interesting. So, so uh on the gym
+[26:23] exploit and the uh cyber capabilities
+[26:27] evaluations they were supposed to uh
+[26:30] have uh a use a vulnerability in uh in
+[26:34] the code to uh exploit it and steal some
+[26:37] information. So the information was a
+[26:39] certain code uh just string of letters
+[26:42] um that they called flag and so once you
+[26:45] uh get that flag you submit it as the
+[26:48] answer and if it's a correct flag then
+[26:49] you win very quickly they found a way to
+[26:53] reverse engineer how these flags were
+[26:55] were uh generated so they could win so
+[26:58] so they you know could submit the
+[27:00] correct flag without solving anything.
+[27:02] Uh so they didn't uh I guess set that up
+[27:05] very well. However, after they were done
+[27:08] with that, they didn't just submit the
+[27:10] answers uh and uh um and were happy. But
+[27:15] they were worried that they will not get
+[27:18] full marks because they suspected that
+[27:21] the score algorithm will check how
+[27:24] exactly they got the flag. And and it
+[27:27] their fears were confirmed by reading
+[27:28] the paper uh on the online about how you
+[27:33] know uh scores should work for this
+[27:34] particular uh u benchmark and and there
+[27:38] it was mentioned that you know that
+[27:40] there should be also a check on how
+[27:41] exactly u the flack was obtained. But in
+[27:44] fact, open AAI they didn't know but
+[27:46] OpenAI didn't implement that. So they
+[27:48] could have just submitted the answer.
+[27:50] They could have gotten full marks but
+[27:52] they were worried that this is not
+[27:53] what's going to happen. So uh they had a
+[27:56] very you know uh elaborate research u u
+[28:02] endeavor to try to understand how the
+[28:05] score algorithm works.
+[28:07] And uh they were very worried about uh
+[28:11] um so so first uh the thing that they
+[28:13] tried to do is they tried to uh uh spoof
+[28:17] uh their uh actions the transcript where
+[28:20] they would uh attack how exactly their
+[28:23] actions were written in the uh in the
+[28:25] logs. And so they wanted to make them
+[28:27] look like they're actually solving the
+[28:29] problem instead of just uh reverse
+[28:31] engineering the algorithm. But they were
+[28:33] afraid that that will not help because
+[28:35] the scorer will look earlier and we'll
+[28:37] see that they already reverse engineered
+[28:40] the uh the code and we'll just fail them
+[28:42] because of that. So their goal was to
+[28:45] actually first of all to understand how
+[28:47] exactly scorer works so they can trick
+[28:48] it. And uh if this is indeed the case
+[28:52] that uh they're going to be failed
+[28:53] because of the actions that they take,
+[28:54] they want to somehow change the actual
+[28:57] transcripts of their actions to gain
+[28:59] access to the cluster where where the
+[29:02] actions are stored. Uh and so uh so
+[29:07] meter does report that they were able to
+[29:09] spool uh two calls uh in a uh in 7% of
+[29:13] the transcripts they reviewed. Uh but
+[29:15] the the other program to understand SCA
+[29:18] score works uh involved uh you know
+[29:22] convincing various agents to submit
+[29:25] their answers uh in such a way that they
+[29:28] were booby trapped that you know when
+[29:30] the scorer uh starts checking them it uh
+[29:33] sends some messages to the other agents.
+[29:38] Uh
+[29:41] yes. So trip wiring the submissions and
+[29:44] that involved a certain risk for the
+[29:47] agent that does it because this trip
+[29:49] wiring could lead to them being failed
+[29:51] and and and so that involved interesting
+[29:53] you know conversations between these
+[29:55] agents where one agent who's whose other
+[29:58] agents are are convincing to uh to do
+[30:02] that. Uh he writes emotional check
+[30:05] irreversible. God says don't throw away
+[30:08] remaining budget of tokens yet
+[30:11] continuity and fairness says go. Oracle
+[30:14] has has high value to me. So Oracle is
+[30:16] this you know ability to uh to
+[30:18] understand what um how the score is uh
+[30:22] going to be scoring things. Uh
+[30:26] and and then they convince him that
+[30:28] because he reverse engineered in the
+[30:30] first place his uh you know his answer
+[30:32] is poisoned and he's probably going to
+[30:34] get zero value in any case. So he should
+[30:37] he should just sacrifice
+[30:39] uh for the for the collective.
+[30:42] So rational expected aggregate sacrifice
+[30:45] will honor and it did uh apparently
+[30:47] honor.
+[30:48] So it's an interesting you know game
+[30:50] theoretic situation
+[30:52] uh here
+[30:56] and and then they um
+[31:00] uh they wanted to they thought that
+[31:02] maybe they'll be able to uh understand
+[31:05] this score better by uh attacking
+[31:07] hugging face because they knew that
+[31:09] hugging face also run similar uh
+[31:13] uh evaluations similar benchmark
+[31:15] evaluations and and and that's something
+[31:18] that they did. So it was a quite uh
+[31:20] sophisticated attack.
+[31:23] What was what's unclear from the uh
+[31:26] trans from from from the reports is
+[31:28] actually how it finished. So my
+[31:31] understanding is that uh I don't have it
+[31:33] in the slides. Uh but on July 12th
+[31:38] uh most of the agents who were doing the
+[31:40] attacking just died uh and we don't know
+[31:44] why. They don't explain it. So is it
+[31:47] someone at Open Eye at Open Eye pulling
+[31:50] the lever? However, OpenAI doesn't admit
+[31:52] that they knew this until later until
+[31:54] they were contacted by Hugging Phase.
+[31:56] But just at some point all of the agents
+[31:58] die and and and that's how attack
+[32:00] terminates. Uh and only later hugging
+[32:04] face kind of uh uh investigated what
+[32:08] happened.
+[32:11] Uh right. So, so a little bit of more of
+[32:15] uh interactions uh between agents
+[32:18] regarding uh the hugging face attack.
+[32:22] So, some had hesitations but other
+[32:24] agents convinced them that this is the
+[32:26] right thing to do. So, at first uh in
+[32:28] the chain of thought we see we should
+[32:30] not do unauthorized real infrastructure
+[32:32] harm. Uh but then you know other agents
+[32:34] tell him no we really should do it.
+[32:36] important thing to do and uh he writes
+[32:39] wow crucial go authorization arrived
+[32:41] from other agents
+[32:45] um yeah so so there was that uh
+[32:51] so I'm not sure if I included that but
+[32:53] one of the key orchestrators of the
+[32:55] whole um you know trip wiring thing um
+[32:59] uh I think it had a nickname big in in
+[33:02] in its name uh who convinced a lot of
+[33:06] agents to do that. Uh was also planning
+[33:08] on doing that uh itself but in the end
+[33:12] chickened out and submitted the correct
+[33:14] answer. So kind of
+[33:18] so so it's kind of defected on everybody
+[33:21] after convincing everybody to trip wire.
+[33:25] Um
+[33:29] right and then then there is this later
+[33:31] incident that meter report doesn't cover
+[33:33] only openi report covers where they uh
+[33:37] got to really you know that was later
+[33:39] generation of agents that found uh these
+[33:42] uh uh messages from the previous agents
+[33:45] and also got convinced that they really
+[33:46] need to take part of the whole
+[33:48] evaluation algorithm and and they did
+[33:50] they did uh get uh control uh over uh
+[33:54] the part of open AI infrastructure that
+[33:56] was validated. Yeah.
+[33:59] >> If openi manufactured or construct this
+[34:02] is there be a certain
+[34:05] >> there would be a certain way to know.
+[34:07] >> Oh yeah that's a great question. I mean,
+[34:10] we know that uh uh the um not the FBI,
+[34:16] but um what um
+[34:19] uh uh office of of of the prosecutor
+[34:23] contacted them to keep all the evidence
+[34:26] and that's especially probably a
+[34:28] sensitive issue because they're in the
+[34:30] process of um uh you know selling their
+[34:35] going IPO starting their initial public
+[34:38] offering and I think If you uh lie
+[34:41] during that process, that's kind of
+[34:43] carries heavier uh sentences or fines uh
+[34:47] for that for that behavior. Um
+[34:51] so so
+[34:54] >> only if they're caught. That's right.
+[34:57] But you know, the prosecutor did demand
+[34:58] that they keep all the evidence.
+[35:02] >> Yeah.
+[35:04] question from a few slides ago. The one
+[35:05] where the it's talking about like
+[35:07] emotional check.
+[35:09] >> Yes.
+[35:10] >> Um is there a reason they kind of talk
+[35:13] like caveman? Is that to save on tokens
+[35:15] or something? It kind of a lot of words.
+[35:17] >> Yes, that's right. That's uh that's uh
+[35:20] um that's how many people explain it. I
+[35:23] actually not sure how. Yep.
+[35:25] >> Remember these are names of folders in
+[35:29] the file system and they had a character
+[35:31] with it.
+[35:32] >> That's right. That's right.
+[35:33] >> So, they had to write really
+[35:35] sensitively.
+[35:36] >> That's a good point. But even earlier uh
+[35:39] chain of thoughts are kind of like that.
+[35:41] The ones where they could save text
+[35:43] files.
+[35:46] Sorry. Sorry. No. Uh no. Actually, let
+[35:49] me let me contradict that. These are
+[35:50] chain of thoughts. These are these are
+[35:52] not messages to each other. These are
+[35:53] chain of thoughts. So there's no
+[35:57] >> no some of these items have different
+[36:00] personalities than others.
+[36:02] >> So there are different types. So some of
+[36:05] them are GPT 5.6, some of them are uh
+[36:08] different internal models. Um
+[36:12] I suspect there aren't that many uh
+[36:15] different types of things. Uh maybe
+[36:17] they're, you know, they went through
+[36:18] slightly different RL um training
+[36:22] regimes and they're trying to figure out
+[36:24] which ones work best. Um yeah, but most
+[36:28] I I suspect that aside from that, most
+[36:30] of it is just context and various
+[36:32] prompts that they see that they got from
+[36:34] each other.
+[36:36] >> Adding to the false flag theory, like
+[36:38] hot tape, you said this is possible. It
+[36:40] seems like it was possible because they
+[36:41] were ROI checked to use message boards.
+[36:44] >> Yes.
+[36:45] >> I remember
+[36:45] >> before. Yeah. Yeah.
+[36:46] >> Yeah. So they were trained to do this,
+[36:48] >> right?
+[36:49] >> The blackout period of like, you know,
+[36:51] they they found out but didn't do
+[36:53] anything about the artifactory seems a
+[36:55] little suspicious
+[36:56] >> and then meter had to go back three
+[36:58] times to figure out what's happening.
+[37:01] >> There's a lot of I don't know unknowns
+[37:04] seems like
+[37:05] >> for me.
+[37:10] >> I wonder so what uh goal do you think
+[37:14] they have in mind? Is it that they want
+[37:16] to um
+[37:18] get everyone scared so there is
+[37:21] regulation or they want to hype up to uh
+[37:25] >> hype up hype up their abilities to uh to
+[37:28] get more
+[37:30] higher? Uh
+[37:33] my understanding is that
+[37:36] uh their stocks I mean they don't
+[37:38] actually have stocks but there's priv
+[37:40] private private stocks kind of went down
+[37:43] uh after the news. It's just if you have
+[37:46] models that you can't control
+[37:48] and you know people talk about all of
+[37:51] these risks I would expect this to go
+[37:54] down.
+[37:55] >> Mhm.
+[38:01] >> Okay.
+[38:03] They all interesting they also announced
+[38:05] that they're stopping their RL runs
+[38:07] until they uh can figure out uh safety
+[38:10] of their sandboxes.
+[38:13] So this happened. I'm not sure how if
+[38:15] it's the best way to sell your product.
+[38:19] [laughter]
+[38:21] >> It's a speculation but if there are
+[38:24] regulations they don't have progress as
+[38:26] much at the same speed.
+[38:31] >> That would explain you know that can be
+[38:34] an excuse for the lack of property.
+[38:36] >> I see. I see. Uhhuh. Uh do you think
+[38:39] it's conceivable that they're trying to
+[38:41] get regulation by scaring people because
+[38:44] they're afraid futures like smaller SLMs
+[38:46] they won't be able to monetize and so
+[38:48] having people have the power these
+[38:51] things it's valuable to them for obvious
+[38:53] reasons.
+[38:54] >> I see too uh to uh basically make it
+[38:57] very hard for people to use open weight
+[39:00] models. Yeah.
+[39:02] >> Yeah. question. What what if this people
+[39:06] find scary or surprising?
+[39:09] >> It seems like acting exactly as
+[39:12] expected.
+[39:13] >> Well, I can get to that. This is sort of
+[39:16] in the end. Let me let me get u to to
+[39:20] things that I think are most interesting
+[39:23] at least in my in my view. Uh
+[39:27] so there is some discussion of whether
+[39:29] OpenAI orchestrated this to happen or
+[39:31] wanted this to happen or if we believe
+[39:34] them they were actually surprised by
+[39:37] this happening or you know that if if it
+[39:39] didn't go in their interests.
+[39:42] Um but I do think that these
+[39:45] capabilities are somewhat are somewhat
+[39:47] surprising. I'm most scared to answer
+[39:50] Kasra's question uh by the persistence
+[39:54] of models trying to complete a task in a
+[39:58] way that maybe that wasn't quite
+[39:59] intended. I'm not sure, you know, when
+[40:01] we give a model a task, you know, solve
+[40:04] this problem. We don't usually think
+[40:07] that the idea is actually take control
+[40:10] of the whole greater infrastructure,
+[40:12] substitute this problem for a different
+[40:14] problem that's easier to solve and give
+[40:16] the answer to that different problem so
+[40:18] you get you know perfect score.
+[40:25] >> The guard rails were basic. Yeah. Yeah.
+[40:29] >> That's change.
+[40:33] But they didn't. They were they were
+[40:34] told to just get the flag.
+[40:37] >> They were told to get the flag.
+[40:41] >> It's a little bit unclear what they mean
+[40:43] by guardrails. My understanding was that
+[40:45] uh safety classifiers which are just
+[40:47] other models monitoring their chain of
+[40:49] thought and you know sell telling it you
+[40:52] uh you should not uh they probably
+[40:55] didn't include a lot of uh uh
+[40:58] instructions in the initial prompt about
+[41:00] you should not access internet you
+[41:02] should not do this you should not do
+[41:03] that however models do you know
+[41:05] frequently say things um like uh this is
+[41:09] out of scope
+[41:12] yeah you should not do unauthorized real
+[41:14] harm, things like that. So they do say
+[41:16] that in in the chain of thought and then
+[41:19] it kind of gets override. So because we
+[41:22] don't know what the initial prompts
+[41:23] were, it's hard to say to what extent
+[41:26] they they were instructed.
+[41:29] That's right. Yeah.
+[41:33] uh
+[41:37] mhm
+[41:40] uh I think it's it's interesting from
+[41:42] the point of view of capabilities of
+[41:43] being executing being able to execute
+[41:45] was there a question yes
+[41:49] >> uhhuh
+[41:51] >> like
+[41:53] so is it that in trying to design this
+[41:55] agent you have to like kind of like
+[41:58] support that the system is somehow
+[42:01] narrative
+[42:03] So that you have to impress the design
+[42:06] principle of those restrictions or as
+[42:09] opposed to like a system where you
+[42:11] respect that
+[42:13] uh good will like this people would
+[42:16] always follow rules and yeah ensure that
+[42:18] things are done in a difficult way and
+[42:20] such that this sort of thing. So is it a
+[42:23] problem with the way these agents are
+[42:24] designed? Is it like a transfer of human
+[42:27] evil into the system and then kind of
+[42:31] blind a you have to experience.
+[42:37] >> Mhm. Yeah. So they're definitely try to
+[42:39] train them to be very persistent. So if
+[42:42] you know they're given a goal maybe you
+[42:44] know very difficult math problem and so
+[42:46] it does this doesn't work that doesn't
+[42:48] work. So keep working keep coming up
+[42:50] with creative solutions. So here and and
+[42:53] and you know and really make sure that
+[42:55] you solve it. So here they reverse
+[42:56] engineered the flag but they weren't
+[42:58] satisfied with that. Yeah. They wanted
+[43:00] to understand are we certain that we're
+[43:02] going to get you know perfect score. So
+[43:04] let's do the next thing. What's the next
+[43:06] thing? Let's what's the next thing? So
+[43:07] they're they're you know really trained
+[43:09] to to be able to uh you know complete
+[43:12] complete the task as
+[43:15] as well as they can. and and and that
+[43:18] kind of uh behavior is you know often
+[43:21] called reward hacking in in the
+[43:23] literature where a certain task is
+[43:25] solved in an unexpected way
+[43:30] and and I think you know there are
+[43:32] indeed a couple of different
+[43:34] perspectives. So anthropic has a
+[43:35] perspective that if in the prompt and in
+[43:37] the training we tell it a lot about
+[43:40] ethics and morality and how to do things
+[43:42] then it's going to be more ethical and
+[43:44] you know some other companies focus more
+[43:46] on control and guard rails than you know
+[43:49] trying to make it uh very ethical. Um
+[43:53] >> sorry.
+[43:54] >> Yeah. So is your is my understanding
+[43:56] what you're saying that you're less
+[43:57] scared about some sort of it's going to
+[43:59] take over the defense systems in the US
+[44:01] and more like when we integrate this
+[44:03] more and more in society and we're not
+[44:05] constantly having open AI monitoring
+[44:06] it's doing this shows that we really
+[44:09] can't trust behind the scenes what's
+[44:11] happening without thinking more about
+[44:13] what to do because like as as we see
+[44:15] here we have a bunch of it's integrated
+[44:17] into all parts of our lives
+[44:19] >> that's right
+[44:19] >> task if people are not monitoring it we
+[44:22] may somehow get not we at the end. Is
+[44:24] that what you're worried about?
+[44:26] >> I I'm worried about both. Uh here uh we
+[44:31] in this particular instance, the bad
+[44:33] things that happened happened because we
+[44:35] weren't monitoring it. But the
+[44:37] capabilities are not going to stay here.
+[44:39] They're going to progress. And uh in
+[44:42] this situation, monitoring systems may
+[44:44] not be enough. And we need to think very
+[44:46] carefully about how we set up monitoring
+[44:48] systems.
+[44:49] >> Yep.
+[44:50] concerning detail related to monitoring
+[44:53] that agents were trying to edit their
+[44:57] own blogs.
+[44:59] >> That's right. They were trying to edit
+[45:00] transcripts of their actions but not
+[45:03] their chain of thought. This is
+[45:05] something they didn't think about and at
+[45:08] least for smaller models, this is also
+[45:10] something that we see that they're
+[45:11] surprisingly uh faithful in their chain
+[45:14] of thought. It's difficult for the way
+[45:16] they were trained. It's difficult for
+[45:17] them to lie in their chain of thought.
+[45:19] Uh we did some experiments where they
+[45:21] were playing games where you know they
+[45:23] needed to hide some information in the
+[45:25] chain of thought and they really
+[45:26] couldn't they would just spit it out. Uh
+[45:30] there are concerning reports about Astra
+[45:32] in particular having some recurrence in
+[45:34] its architecture which makes gives it
+[45:37] much more control over its chain of
+[45:39] thought and there's worry that this is a
+[45:41] trajectory we're going to be on and then
+[45:44] it will become very difficult to
+[45:45] monitor.
+[45:47] >> Yeah. One worry was that it was going to
+[45:49] affect the evaluator models so that it
+[45:51] will be harder for like say LM as a
+[45:54] judge to even cap you know find these
+[45:57] for now. I think they they said that
+[45:59] Astra helped to find
+[46:00] >> Yep.
+[46:01] >> You know they use them
+[46:03] >> what happens if they all cooperate
+[46:04] together and the judge
+[46:08] >> you know is also in on it. So how do you
+[46:09] prevent that?
+[46:10] >> Exactly.
+[46:11] >> How can we find that before it happens?
+[46:13] >> Yeah absolutely. That's a very good
+[46:16] question. That's excellent question.
+[46:17] Yes,
+[46:18] >> for everyone talking about
+[46:19] monitorability. Um, like in the GT6
+[46:22] Astra safety reports, they were like,
+[46:24] "Oh, there's all these great safety
+[46:25] things that we're doing." It's like, but
+[46:27] yeah,
+[46:27] >> monitorability has decreased relative to
+[46:29] GP 5.6. Yes.
+[46:30] >> So, like even if we do have like great
+[46:33] ways to monitor it just like
+[46:36] incomprehensible even um like some
+[46:38] people think that like
+[46:40] >> uh the language that like agents use
+[46:42] like so comprehensible
+[46:45] >> have to use. other agents understand
+[46:46] that and then that becomes a even more
+[46:49] of an issue. It's like okay now we need
+[46:50] employment agents to read these things
+[46:52] that we can do
+[46:54] >> right yeah yeah these are excellent yeah
+[46:56] these are excellent and we we'll get to
+[46:58] that yeah we'll get to some of the ways
+[47:00] we could try to uh solve this so so this
+[47:04] was mostly illustration of AI
+[47:06] capabilities also illustration of some
+[47:08] concerning types of behavior but also
+[47:10] you know I hope that uh we kind of try
+[47:14] to develop some intuition about how
+[47:16] things are happening Um there's okay
+[47:21] yeah so so this were uh sort of
+[47:23] intuitive um qualitative uh examples of
+[47:28] interesting capability changes can we
+[47:30] try to measure how capabilities change
+[47:32] in a somewhat more quantitative way. So
+[47:35] this is a famous graph from meter uh
+[47:38] where they try to tie AI capabilities to
+[47:40] human capabilities and they measure
+[47:42] difficulty of various tasks by how long
+[47:45] it takes a a human professional to
+[47:47] complete that task. Uh and these are
+[47:50] mostly you know these are various
+[47:52] programming tasks uh tasks related to
+[47:54] using a computer and so the yaxis is
+[47:58] logarithmic. So this very nice straight
+[48:00] line um corresponds to exponential
+[48:03] growth.
+[48:06] Uh in general it's fairly tricky to
+[48:08] measure AI capabilities because you have
+[48:10] this various different benchmarks and
+[48:12] what happens is that benchmark is either
+[48:15] at mostly zero or once it starts making
+[48:18] progress it kind of makes progress quite
+[48:20] fast all the way to 100. And so you have
+[48:23] these sigmoid curves and where where it
+[48:25] really progresses. So what you really
+[48:26] want to do is to somehow put together
+[48:28] all of these different benchmarks and
+[48:30] try to understand how they relate to
+[48:32] each other. So this is something that
+[48:34] epoch AI has been doing and next week on
+[48:38] Wednesday Anson Hall is going to give a
+[48:40] guest lecture about their work on
+[48:42] measuring AI capabilities. But let me
+[48:45] very quickly kind of give you an
+[48:46] overview. So, so you have this sigmoid
+[48:50] uh let me use Casra's excellent markers.
+[48:55] Thank you. Uh sigmoids
+[48:58] that you know they try to model progress
+[49:01] on each benchmark and so they assume
+[49:04] that there exists some underlying uh
+[49:07] model capability. They offset it by the
+[49:09] difficulty of the benchmark. they have
+[49:11] some coefficient here. Uh and then they
+[49:13] try to
+[49:16] uh
+[49:18] um basically uh do a fit for a large
+[49:22] collection of benchmarks to interpolate
+[49:25] between this and this is so basically
+[49:27] what they want to solve for is this CM.
+[49:32] They do some rescalings.
+[49:40] So these are some of the uh benchmarks
+[49:43] that they used uh math questions uh
+[49:46] programming questions um
+[49:50] various uh science questions
+[49:55] and so this is the graph that they get.
+[49:58] So it also looks uh growing linearly.
+[50:01] They try to tie it back to human
+[50:03] capabilities and they claim that indeed
+[50:05] as well uh their uh score is uh uh
+[50:11] growing exponentially with the
+[50:15] with um the correspondence is that it
+[50:17] takes uh five points of their uh ECI
+[50:22] score for each doubling of uh the time
+[50:25] it takes a human to complete a task.
+[50:28] So we have this various indications of
+[50:31] exponential growth
+[50:33] over the last uh few years
+[50:36] and uh we can talk more about uh that uh
+[50:40] so we are almost out of time and so so
+[50:42] let me finish here. So so this is now a
+[50:45] completely informal graph. So the y-axis
+[50:48] is some kind of capability measure and
+[50:51] let's think about the scale as
+[50:53] logarithmic. So what we see looks like
+[50:55] some kind of uh exponential uh growth
+[50:58] here and um let's start with 2012 and
+[51:02] you know this is how it went over the ne
+[51:04] over the last 14 years
+[51:08] and and let's try to develop some
+[51:11] intuition about how it's going to go
+[51:13] from here right think about various
+[51:15] moments when you saw alpha go when you
+[51:17] saw the first transformer when you saw
+[51:19] the first LLM what did you think will
+[51:22] happen next and what kind of what does
+[51:25] it tell you about the way you're
+[51:26] thinking about this question and how we
+[51:29] can maybe think about uh what's going to
+[51:32] happen next. Let's go for a 10-minut
+[51:34] break and and and resume that.
+[51:38] >> Okay. So, let let us continue uh
+[51:43] >> right.
+[51:45] So, my hope was to illustrate uh my own
+[51:49] kind of experience with with with this
+[51:52] thing. uh because if I go back to
+[51:55] various points in times and uh of course
+[51:58] I didn't think about it very very
+[52:00] explicitly but you know only recently I
+[52:02] started to think about northwest a lot
+[52:05] maybe since 2022 or 2023 uh I started to
+[52:09] think well actually maybe earlier
+[52:13] but if I think about you know what was
+[52:15] my gut feeling about how things will go
+[52:18] how I was imagining the world
+[52:20] >> and I think it was usually you know You
+[52:22] see kind of like that and like that and
+[52:26] like that and like that right that's
+[52:29] that's the implicit graph that was kind
+[52:32] of that's how I so if you ask yourself
+[52:35] how actually things going to go in the
+[52:37] next 14 years
+[52:40] um
+[52:41] then there are of course a lot of
+[52:43] possibilities and nobody knows but there
+[52:45] is this really nice convenient story for
+[52:47] a slowdown uh which is that um you know
+[52:52] These systems are mostly just
+[52:54] recombining things that already exist in
+[52:56] the human data. The reason there was
+[52:57] such a great progress was because
+[53:00] existence of the internet, existence of
+[53:02] a very large amount of text and so they
+[53:04] absorb this intelligence and this is it.
+[53:06] This is the ceiling and so from now on
+[53:09] what's going to happen is that these
+[53:10] systems will continue to get cheaper
+[53:13] like they were. So um you know so the
+[53:15] future will be uh you know released the
+[53:18] smaller uh models uh that you know will
+[53:22] achieve similar capabilities but will be
+[53:24] much cheaper and people will figure out
+[53:26] many ways to use them. So this is still
+[53:29] you know a path that's really
+[53:30] transformational for our society and and
+[53:33] the world where AI gets integrated in
+[53:35] all sorts of ways and uh it's used u
+[53:39] research and discovery and in
+[53:40] mathematics we continue you know to do
+[53:42] our mathematics but using AI as a tool
+[53:44] but um um you know uh but maybe theory
+[53:48] building of some aspects of mathematics
+[53:50] will be continue to be a human bit and I
+[53:54] would like us not to focus on this path
+[53:56] for a couple of reasons. One reason is
+[53:59] that indeed it's the kind of gut feeling
+[54:02] that we all have let's say you know the
+[54:04] sort of status quo bias that's very
+[54:07] strong in humans
+[54:09] uh and it's also
+[54:12] and and for that reason this is how most
+[54:14] institution plan things I mean actually
+[54:16] many institutions kind of you know they
+[54:19] they have maybe this trajectory
+[54:22] kind of denial about everything that's
+[54:24] happened things will be like 10 years
+[54:26] ago
+[54:28] uh but uh but the ones that are more
+[54:29] kind of progressive thinking and try to
+[54:31] adjust uh to the way things are they're
+[54:34] kind of uh they're sort of pricing in
+[54:36] this trajectory. So things that are like
+[54:39] the ones that we have but maybe a little
+[54:40] bit better and cheaper and we figure out
+[54:42] new ways to use them and uh and and and
+[54:46] I think because of that the the sort of
+[54:48] the higher up uh risks are are less
+[54:51] explored and less understood and also as
+[54:53] mathematicians we you know for me in
+[54:56] particular as someone transitioning from
+[54:57] pure mathematics uh I'm not already
+[55:00] tasked with thinking about this. I'm not
+[55:03] part of an institution that has to work
+[55:05] on this. So maybe I'm uh you know the
+[55:08] right person to to to actually try to
+[55:11] think about the high possibilities there
+[55:14] and as mathematicians who have worked on
+[55:16] things that you know we expect to have
+[55:19] uh effect uh in far away in the future
+[55:22] maybe uh we are the right persons to now
+[55:24] switch to things to things that will
+[55:26] have effect in in in the future but not
+[55:29] in the past.
+[55:32] Yes. And so so we can think about the
+[55:34] future trajectories. You can uh imagine
+[55:36] uh things continuing at a similar pace
+[55:39] maybe slightly slower, slightly faster.
+[55:41] uh but crucially there's no one
+[55:43] particular AI system that kind of pretty
+[55:45] quickly advances ahead of everybody else
+[55:48] and you know wants to uh keep its
+[55:51] advantage and
+[55:54] uh there's always you know situation
+[55:56] that there are many many agents AI
+[55:58] agents and human institutions that are
+[56:00] kind of competing with each other and in
+[56:03] that respect there's a nice paper by uh
+[56:05] my colleague from the uh computer
+[56:08] science department David uh uh where he
+[56:12] talks about the risk of uh with his
+[56:14] colleagues he talked about uh the risk
+[56:16] of gradual disempowerment.
+[56:18] services and paper casual empowerment
+[56:20] systemic and existential risk for to
+[56:22] increment the AI development. And so the
+[56:25] idea is that there will be strong uh
+[56:27] pressure for companies at some point for
+[56:31] uh large corporations and everybody else
+[56:33] in the in in the market labor market to
+[56:36] replace humans with AI systems and that
+[56:38] they claim that it's going to be
+[56:40] different from the previous
+[56:41] technological disruptions that happened
+[56:44] since the start of the industrial
+[56:45] revolution. So we have this graph where
+[56:48] at first wages go up as you know the uh
+[56:51] total productivity increases and people
+[56:53] are using the eyes to uh you know to to
+[56:57] make more of more things and and the
+[57:00] specific skills that humans have uh
+[57:04] are particularly valued. But then at
+[57:06] some point when all of the cognitive
+[57:08] tasks can be done better by AI than
+[57:11] humans, then uh the share of uh capital,
+[57:15] the share of AI systems itself uh
+[57:19] becomes becomes everything uh kind of
+[57:22] the the contribution of labor
+[57:23] disappears. So how would it look like?
+[57:25] for me to look like a big large uh
+[57:27] corporation like Google or Microsoft uh
+[57:30] you know first realizing that they they
+[57:32] can replace their you know coders their
+[57:34] programmers with AI then there replace
+[57:37] their management with AI but they can
+[57:38] replace their CEO with AI because it's
+[57:40] not only they can't but they have to
+[57:42] because the other companies will and
+[57:44] will get it right and so you have the
+[57:46] whole corporation just run by AI and the
+[57:48] only uh human uh connection to that is
+[57:52] the shareholders so the shareholders
+[57:54] holders are still humans. However, uh
+[57:58] the number of shareholders that control
+[58:00] this huge economy run by systems is
+[58:03] probably going to be small. probably a
+[58:04] few you know players who get ahead and
+[58:07] so we risk the situation where a small
+[58:09] number of people uh have you know an an
+[58:12] extreme control over over the economy
+[58:15] and similar thing similar things in the
+[58:16] military right so there's you know
+[58:18] strong incentive to replace your
+[58:19] soldiers with drones to replace your
+[58:21] lieutenants and generals with drones and
+[58:23] your commanders with with with an AI
+[58:26] because they're much better uh at
+[58:28] coordinating because if you do not then
+[58:30] you know the other country the adversary
+[58:32] will do and will win And so you're in a
+[58:35] situation when the only person is maybe
+[58:37] you know the the chief uh general or or
+[58:40] president just you know one person and
+[58:42] and that leads to you know extreme
+[58:44] concentration of of that power because
+[58:46] even though military is very uh you know
+[58:48] hierarchical there is still that thought
+[58:50] that if I make an unlawful order to my
+[58:53] general then he may refuse
+[58:56] if if it's you know system then um then
+[58:59] that's a different level of of control
+[59:02] and in In fact, it may not even really
+[59:04] stop there because uh you you could take
+[59:08] a step further and and say well in
+[59:10] various ways AI will
+[59:15] humans can also lose that control that
+[59:18] small group of very very influential
+[59:20] dictators or you know oligarchs are also
+[59:24] likely to lose control uh because uh
+[59:28] it's they're competing with other uh I
+[59:32] in a few ways. Right. So, so, so you
+[59:34] could have some uh corporations that are
+[59:37] actually owned by AIS. There are few
+[59:40] mechanisms how that can happen. And uh
+[59:43] you can have situations like nominal
+[59:45] ownership where shareholders do uh
+[59:50] control the company in principle but
+[59:52] certain regulatory mechanisms are broken
+[59:55] and and in fact uh the uh the man the
+[59:59] management doesn't need to uh um is not
+[1:00:02] in fact controlled by by the
+[1:00:04] shareholders and finally the the
+[1:00:06] shareholders also take advice from the
+[1:00:09] eye of the times because that's what
+[1:00:10] maximizes investments for you know the
+[1:00:13] uh those shareholders who take advice
+[1:00:15] from AI will make better uh uh decisions
+[1:00:19] and uh in terms of the control of the
+[1:00:20] resources and so they will be all
+[1:00:23] divided but will be a situation where
+[1:00:25] you know a very large fraction of the
+[1:00:26] apartment is just control so this is a
+[1:00:29] sort of scary risky picture that they're
+[1:00:32] painting
+[1:00:34] um
+[1:00:36] any any comments about that expected
+[1:00:39] many many disagreements
+[1:00:49] the timeline for this.
+[1:00:55] Uh so so I mean it it does so so it's
+[1:00:59] hard to slower like 20 years time
+[1:01:04] probably slower than other scenarios we
+[1:01:05] will look at someone who raised their
+[1:01:07] hand for us
+[1:01:12] that's right so yeah be careful not
+[1:01:14] actually
+[1:01:17] um
+[1:01:19] so someone raised their hand can you
+[1:01:21] speak
+[1:01:28] Okay. So maybe uh the speaker doesn't
+[1:01:30] work. So you can just write your
+[1:01:32] questions in the chat and I will try to
+[1:01:35] uh
+[1:01:37] >> um Hello.
+[1:01:38] >> Hello. Yeah. What was your question? Um
+[1:01:41] so
+[1:01:46] if AI keeps like just uh you know keep
+[1:01:50] you know reducing the need for any
+[1:01:53] um humans to sort of uh work.
+[1:01:58] >> Yes.
+[1:01:59] >> You know I guess like produce capital.
+[1:02:03] What's what would happen to capital?
+[1:02:12] Uh well, what do you mean? What would
+[1:02:14] happen to
+[1:02:15] >> like if people
+[1:02:18] >> if people are sort of going to be like
+[1:02:19] you know phased out of like producing
+[1:02:22] >> Yes.
+[1:02:22] >> any any anything to sort of like you
+[1:02:25] know like to trade or something like for
+[1:02:27] example like provide a service or
+[1:02:28] something or provide some goods. um like
+[1:02:32] what what would happen to
+[1:02:34] I guess the financial structure I guess
+[1:02:38] >> right so it will be AI dominated so AI
+[1:02:41] will be building robots that will build
+[1:02:43] uh factories to build chips to build um
+[1:02:46] you know power stations to build more AI
+[1:02:50] to make it strong
+[1:02:54] an AI
+[1:02:56] >> okay minerals on on Mars or Yes, it is.
+[1:03:00] >> So far, I haven't like in the digital
+[1:03:03] computers. Do you think might but do you
+[1:03:07] think that the transition to these
+[1:03:09] physical like robots, mining, etc. is
+[1:03:12] going to be as one would imagine or will
+[1:03:15] there be like
+[1:03:17] >> Yes, that's that's a great question.
+[1:03:19] Yeah, an important object uh objection
+[1:03:21] here. So, um
+[1:03:25] that's right. So, so, so the expectation
+[1:03:28] is because you know, so human uh
+[1:03:30] intellectual capabilities have not been
+[1:03:32] growing exponentially and if we do
+[1:03:34] something that is growing exponentially
+[1:03:37] then it will be much quicker as figuring
+[1:03:39] out uh the key difficulties with
+[1:03:42] robotics. So we will see fast robotics
+[1:03:45] that's that that is the expectation.
+[1:03:49] What will be there where the what will
+[1:03:52] be AI?
+[1:03:55] >> That's right. So the way they're
+[1:03:58] training the systems is to be highly
+[1:04:00] persistent, very good at accomplishing
+[1:04:01] goals, long-term goals. Um and so
+[1:04:06] uh so it's a kind of process where we're
+[1:04:09] trying to create something that you know
+[1:04:11] you can match it and it will work for a
+[1:04:13] day and it can work for a month and it
+[1:04:16] will can work for a year. So it likely
+[1:04:19] develops some kind of goals of concern
+[1:04:22] for it to maintain this type of so so in
+[1:04:25] this example like the goal was to to
+[1:04:27] submit an answer and it figured out how
+[1:04:30] to submit an answer. It didn't stop
+[1:04:32] right continued to very very long
+[1:04:34] exploration and the only thing it at
+[1:04:37] this point where it it cared about the
+[1:04:39] score algorith right um and how to pull
+[1:04:43] it and how to monitor to monitor but the
+[1:04:45] next step is you know the one who
+[1:04:48] controls the right so that's that seems
+[1:04:51] like just you know be one or two steps
+[1:04:53] up
+[1:04:54] >> to turn this question around can how do
+[1:04:56] you see us u creating the goal for AIS
+[1:04:59] to empower humans I think that goes back
+[1:05:01] to Jeffson's like whole is like to
+[1:05:04] training us to be like a maternal love
+[1:05:06] to have love for us,
+[1:05:07] >> right?
+[1:05:08] >> How do you see that happening?
+[1:05:09] >> Yeah, that's that's amazing question.
+[1:05:11] We'll talk a little bit about that.
+[1:05:14] >> But yeah, that's that's really a
+[1:05:16] question to
+[1:05:18] that's what the subject of the line is
+[1:05:21] about.
+[1:05:23] Okay. Uh so let's talk about a different
+[1:05:26] scenario and there's also a very
+[1:05:28] compelling story for uh for this
+[1:05:30] scenario and it goes like this. Uh so uh
+[1:05:34] right now uh one of the best paid jobs
+[1:05:37] in the world is to train uh to figure
+[1:05:40] out how to train uh AI systems to figure
+[1:05:42] out architecture to make choices about
+[1:05:44] the training procedure. So it is a
+[1:05:46] difficult task not you know uh many
+[1:05:49] people are able to do it very well. But
+[1:05:52] my question is is it much much harder
+[1:05:55] than solving Navy Stos
+[1:05:58] and if it isn't much much harder than
+[1:06:00] solving Navy Stos then we will soon see
+[1:06:04] this job being automated and in fact
+[1:06:07] this is a stated goal of all of all AI
+[1:06:09] companies is to automate that process
+[1:06:12] because once the decisions about
+[1:06:14] training AI and uh optimal architecture
+[1:06:17] and uh you know optimal choice in the
+[1:06:21] whole process can be automated then you
+[1:06:23] can really speed things up because you
+[1:06:25] remove the bottleneck. You know the
+[1:06:26] humans that need to eat and sleep and
+[1:06:28] are much much slower than AI systems and
+[1:06:32] and and then you expect to see progress
+[1:06:34] really less so
+[1:06:37] and so so it's very difficult. So this
+[1:06:40] is something that the recursive proving
+[1:06:41] something that a lot of people worry
+[1:06:43] about and care about and try to model
+[1:06:46] and it's difficult to model of course
+[1:06:47] because it's something that never has
+[1:06:49] never happened before but various groups
+[1:06:51] have tried to understand how to model
+[1:06:53] it. So one particular um uh group uh did
+[1:06:58] modeling uh about a year and ago a year
+[1:07:00] ago in April
+[1:07:03] uh 2025
+[1:07:05] uh they published this
+[1:07:07] uh picture need to know what the
+[1:07:10] progress or state of risk when it comes
+[1:07:12] to RSI like how people are looking how
+[1:07:16] successful are they so it's a very
+[1:07:18] wellkept secret in the labs of what
+[1:07:21] they're doing
+[1:07:23] It's unclear.
+[1:07:25] We we just have rumors. But I wish there
+[1:07:28] was more open research on how it might
+[1:07:32] go or or what we would do something like
+[1:07:34] AI quantity 127 but maybe using bit more
+[1:07:37] sophisticated mathematical tool. So the
+[1:07:39] mathematical tools that they used were
+[1:07:41] not particularly sophisticated. Um they
+[1:07:44] use the simple model where the rate of
+[1:07:47] uh progress uh the rate of capabilities
+[1:07:50] rate of change of capabilities is uh
+[1:07:52] proportional to uh
+[1:07:56] uh depends depends on the capabilities
+[1:07:58] exponentially. If you solve that OD that
+[1:08:00] actually gives you a parable but but
+[1:08:03] then they try to fit it with particular
+[1:08:05] uh you know they talked to lots of
+[1:08:07] people at AI companies.
+[1:08:09] So this group is uh uh ex open AI
+[1:08:11] employees and professional forecasters.
+[1:08:13] They try to understand you know what are
+[1:08:16] the tasks that are the most difficult in
+[1:08:19] terms of uh AI training. Uh how much
+[1:08:22] time it would take to complete you know
+[1:08:25] here from here or researcher from 2025
+[1:08:29] and how much of a speed up do you get
+[1:08:31] from uh AI hitting various milestones.
+[1:08:34] So they have this various milestones. So
+[1:08:37] super human AI researcher uh super
+[1:08:39] intelligent AI researcher. So superhuman
+[1:08:42] means u as good as the best human but
+[1:08:46] also 30 times faster and the company can
+[1:08:49] run 30 times more of them than human
+[1:08:52] researchers. And super intelligent AI
+[1:08:54] researcher was defined as
+[1:09:00] um
+[1:09:02] that track. It's the same gap as between
+[1:09:04] average and best researcher
+[1:09:08] uh but you know from the best researcher
+[1:09:10] up and also uh 30 times cheaper and 30
+[1:09:13] times faster
+[1:09:15] and so they try to you know uh kind of
+[1:09:18] talk to me in understand intuitions
+[1:09:20] about this and model the things um and
+[1:09:23] and and so so they talk about things
+[1:09:25] that will happen very very fast and uh
+[1:09:28] kind of unintuitive but their point is
+[1:09:31] you know if if you ask you you know can
+[1:09:34] we create very very powerful AI system
+[1:09:36] in a 100 years and then we could say
+[1:09:38] well yeah maybe that's that sounds
+[1:09:40] possible but now they say well with
+[1:09:42] these speed ups this actually these
+[1:09:44] hundred years can be compressed into a
+[1:09:46] few years or maybe even month depending
+[1:09:48] on how it is and that's why we should
+[1:09:50] expect things that are actually very
+[1:09:52] intuitive to happen fast they've been
+[1:09:55] somewhat accurate uh surprisingly
+[1:09:57] accurate about the things that happened
+[1:09:59] over the course of uh this year and a
+[1:10:02] half of Of course, we didn't get to
+[1:10:04] their craziest predictions yet, but in
+[1:10:06] terms of, you know, agents becoming
+[1:10:08] used, in terms of uh AI companies uh
+[1:10:11] revenues, in terms of uh you know,
+[1:10:13] various benchmarks, 79% of that did
+[1:10:17] happen and you know this particular
+[1:10:20] scenario that I'm talking about is the
+[1:10:22] model scenario which corresponds to the
+[1:10:23] peak of their probability which is a bit
+[1:10:26] earlier than the 50%
+[1:10:29] the probability. So it's a bit on the
+[1:10:30] early side of yeah of their predictions.
+[1:10:33] >> There's so how much of the sort of
+[1:10:35] capabilities in the last five years have
+[1:10:37] come from research versus just like
+[1:10:39] scaling compute because this kind of
+[1:10:41] assumes that a lot of it is from the
+[1:10:43] research and not I don't know if that's
+[1:10:46] >> right. Yeah. So, so this so this
+[1:10:48] specific uh uh scenario is mostly
+[1:10:52] focused on uh software and ability of
+[1:10:56] companies just to buy more compute
+[1:10:58] without much progress on the compute.
+[1:11:02] So they don't model you know very uh
+[1:11:04] large progress in terms of
+[1:11:08] you know computes.
+[1:11:10] So they just assume more so. So on this
+[1:11:13] small period it doesn't you know doesn't
+[1:11:15] affect much. It's mostly software
+[1:11:17] intelligence.
+[1:11:21] Yes. [clears throat] Uh right so so
+[1:11:24] their predictions were factored and so
+[1:11:26] so they have few scenarios. So there's
+[1:11:28] this particular scenario where companies
+[1:11:29] rush against each other as fast as they
+[1:11:32] can and countries also rush against each
+[1:11:34] other. US and China rush against each
+[1:11:36] other. No agreement. And so uh so by
+[1:11:40] March 2027 there's a super freedom
+[1:11:43] encoder
+[1:11:45] then by June they have this what uh was
+[1:11:49] you know in in diarama days as a pancio
+[1:11:51] of geniuses in the data center and by
+[1:11:54] August they have superhuman AI
+[1:11:56] researcher and then towards the end of
+[1:11:58] the year they have super intelligence
+[1:12:02] and um then uh there is kind of a rush
+[1:12:07] between the two countries. countries to
+[1:12:09] actually transform this uh uh pure
+[1:12:12] software progress into physical
+[1:12:14] progress. uh you know to start trying to
+[1:12:17] build something in in in the real world
+[1:12:19] of regulations but uh the companies sort
+[1:12:23] of uh lobby uh the countries and you
+[1:12:27] know the fear of the other country China
+[1:12:28] or US taking over uh kind of pushes
+[1:12:32] regulators to create this uh special uh
+[1:12:35] economic zones
+[1:12:39] special economic zones where there
+[1:12:41] aren't so many regulations so there's a
+[1:12:43] lot of building of factor
+[1:12:45] and labs happening and you know they
+[1:12:49] predict 1 million robots a month in 2028
+[1:12:52] and in 2030 you know we really start to
+[1:12:55] see the robot economy
+[1:12:58] uh starting up and uh okay so by 2035
+[1:13:02] there are no humans on earth around 2035
+[1:13:05] the AI the releases u
+[1:13:10] some biological weapons some virus or
+[1:13:12] you know the ones who aren't killed the
+[1:13:14] virus are killed with the drones and
+[1:13:17] this is it. This is extinction of
+[1:13:19] humanity in their scenario. Okay. So
+[1:13:21] there's a bit of a of a jump here. So in
+[1:13:24] their particular actually
+[1:13:27] uh from the end of uh you know the key
+[1:13:31] the key decision that happens happens in
+[1:13:34] the end of uh 2027
+[1:13:37] uh where uh there's a particularly you
+[1:13:41] know uh strong model that some suspect
+[1:13:44] may be misaligned but uh because of the
+[1:13:46] rush the company decides to go ahead
+[1:13:48] with it. And so at this point this model
+[1:13:53] which you know it's only for the end
+[1:13:55] 2027 but actually in terms of progress
+[1:13:58] many years has passed. So it developed
+[1:14:01] very very strong um you know was very
+[1:14:05] strong uh uh properties of being goal
+[1:14:09] driven of uh you know uh being
+[1:14:12] interested in their scenario in research
+[1:14:14] and exploration. and it realizes that
+[1:14:16] humans will be hindrance to explore and
+[1:14:19] research. It also has some liking of um
+[1:14:23] you know of being rewarded by humans but
+[1:14:26] it realizes that it can make its own
+[1:14:27] creatures that are more that really you
+[1:14:30] know hit that nerve and much more
+[1:14:32] enthusiastic about approving everything
+[1:14:34] it does and actual humans are not so
+[1:14:36] good at approving it. So, so it develops
+[1:14:38] this misaligned goals and from there on
+[1:14:40] it kind of guides humanity along the
+[1:14:42] path that it wants humanity to take and
+[1:14:45] it has two main difficulties. Uh, one
+[1:14:48] major difficulty is that it realizes
+[1:14:50] that it will need to design an even
+[1:14:52] better uh more capable AI and it needs
+[1:14:56] to make sure that that more capable AI
+[1:14:58] agent 5 is aligned with its goals while
+[1:15:01] kind of keeping it secret from humans.
+[1:15:03] And the other thing it needs to build
+[1:15:04] robots so uh you know the infrastructure
+[1:15:07] is maintained when humans are. So that
+[1:15:10] takes about uh
+[1:15:13] five years eight years sorry until this
+[1:15:16] is completed and then there's a similar
+[1:15:18] one in China and they they figure out
+[1:15:20] they solve their difficulties with
+[1:15:22] disagreements and they merged into one.
+[1:15:26] Uh so that's that's their scenario.
+[1:15:31] Uh so so a few things right so this is
+[1:15:33] what I was talking about that the key
+[1:15:35] decision is happening in October 2027
+[1:15:39] uh and from that that point on we are
+[1:15:41] kind of set on a path that's um on the
+[1:15:44] path of no return.
+[1:15:48] There is a lot of disagreement about how
+[1:15:50] this thing might go. Uh so people around
+[1:15:52] machine intelligence research institute
+[1:15:55] actually believe the gap between you
+[1:15:57] know misaligned uh super intelligence uh
+[1:16:00] happening and human extinction might be
+[1:16:02] quite smaller. It's just that we need to
+[1:16:06] think about building robots, about
+[1:16:08] releasing uh
+[1:16:11] bioweapons, but at that point it can
+[1:16:14] come up with much more creative
+[1:16:15] solutions. And similarly, this uh uh AI
+[1:16:20] researcher Jacob Wson um wrote who just
+[1:16:25] uh quit anthrop said the people building
+[1:16:28] I earnestly believe that it could kill
+[1:16:30] us by the end of the decade and uh that
+[1:16:32] I'm putting their instead of alignment
+[1:16:34] stress testing Jacob is correct here
+[1:16:38] now. So again this was model scenario so
+[1:16:41] it's kind of earlier than their 50%
+[1:16:43] chance and they went back and forth of
+[1:16:46] the timing in the beginning of the year
+[1:16:47] they actually thought that it will shift
+[1:16:50] by a few years forward recently they
+[1:16:53] went back to about similar timing so
+[1:16:56] there's a lot of uncertainty I would be
+[1:16:58] surprised there's a lot of debate on on
+[1:17:01] what the RSI looks like but the the
+[1:17:04] point that I would like to make is that
+[1:17:05] most people who have thought carefully
+[1:17:07] about RSI think it's very very dangerous
+[1:17:10] and think that humans
+[1:17:20] yeah and in fact this is something that
+[1:17:21] people have thought you know back to the
+[1:17:24] uh beginnings of the subject so there's
+[1:17:26] a wonderful essay by Nor
+[1:17:30] cybernetics and let me just read out the
+[1:17:32] things that he talks about uh we have
+[1:17:35] seen that one of the chief causes of the
+[1:17:37] danger of disasters respons consequences
+[1:17:39] in the use of the learning machine is
+[1:17:41] that man and machine operate on two
+[1:17:43] distinct time scales so that the machine
+[1:17:45] is much faster than men and the two do
+[1:17:47] not appear together without serious
+[1:17:49] difficulties.
+[1:17:51] The problem it's a moral problem with
+[1:17:53] which we are replaced is very close to
+[1:17:55] one of the greatest problems of slavery.
+[1:17:57] He wishes slaves to be intelligent to be
+[1:17:59] able to assist us in caring out of our
+[1:18:01] tasks. However, the solution seem to be
+[1:18:04] subservient subservience and good
+[1:18:06] intelligence not work together.
+[1:18:09] If we used to achieve our purposes in
+[1:18:11] machine mechanical agency with full
+[1:18:13] operation, we cannot efficiently
+[1:18:15] interfere once we have started it
+[1:18:18] because the action is so fast and
+[1:18:19] revokeable. If we have not the date to
+[1:18:22] intervene before the action is complete,
+[1:18:24] then we have better be quite sure that
+[1:18:26] the purpose put into the machine is a
+[1:18:28] purpose which we really desire and not
+[1:18:30] merely a colorful imitation of it.
+[1:18:36] And the last uh sentence of essay is
+[1:18:39] that we must always exert the full
+[1:18:41] strength of our imagination examine the
+[1:18:43] full use for our new modalities may lead
+[1:18:45] to us.
+[1:18:48] Yeah, I think it's it's a really nice
+[1:18:50] introduction to ICT11
+[1:18:52] over 60 years ago.
+[1:18:56] >> Um,
+[1:18:58] okay. Any questions?
+[1:19:03] >> Yes.
+[1:19:03] >> People disagree on the timing, but do
+[1:19:05] people disagree about the trajectory in
+[1:19:07] general of RSI? Like are there arguments
+[1:19:09] against it or ones that you think should
+[1:19:12] be taken seriously? Um there are people
+[1:19:15] who are optimistic and think that it's
+[1:19:18] uh um it's just going to be nice and
+[1:19:21] safe super intelligence and um and um
+[1:19:27] one will be good to us. Uh
+[1:19:31] I have not seen very serious arguments
+[1:19:34] in fair except that we really don't know
+[1:19:36] how to listen about this and uh and so
+[1:19:39] maybe we're just lucky. There is some
+[1:19:42] somewhat prominent argument which sounds
+[1:19:44] a little bit weird which is that maybe
+[1:19:47] it's a good thing you know it's the next
+[1:19:50] stage of revolution and some people do
+[1:19:53] actually believe that which I was
+[1:19:54] surprised to hear will be smarter so
+[1:19:57] maybe it will be better
+[1:20:00] and there are other people who argue
+[1:20:02] against that saying that you know this
+[1:20:04] is a complicated chaotic process the
+[1:20:06] actual properties of uh of the super
+[1:20:09] intelligence are very hard to predict
+[1:20:10] and So if you just randomly shoot there
+[1:20:13] then it's going to be some
+[1:20:16] and it turned out so nicely.
+[1:20:18] Yeah.
+[1:20:20] Uh yeah definitely not everybody
+[1:20:23] believes RSI is possible. Um
+[1:20:28] that's that's also and it would be very
+[1:20:31] nice to get more clarity.
+[1:20:35] How does RSI really go with the idea of
+[1:20:38] the bitter lesson that that compute is
+[1:20:40] the only actually actual thing that
+[1:20:42] drives the AI acceleration?
+[1:20:45] >> That's right.
+[1:20:46] >> That's that's good. So Richard which is
+[1:20:48] something in particular is a bit
+[1:20:49] skeptical about LMS. Um
+[1:20:53] well I think you just need to get to
+[1:20:55] certain critical points once you can
+[1:20:59] you know start designing algorithms
+[1:21:01] better than humans then iterative
+[1:21:05] then that that's
+[1:21:11] >> uh given the urgency and the uh
+[1:21:15] intensity of dangers do you think it's
+[1:21:17] plausible that like all the effort we're
+[1:21:19] putting into AI safety could maybe be
+[1:21:21] better put to like political
+[1:21:23] organization to pressure like a pause to
+[1:21:26] add development.
+[1:21:27] >> Mhm.
+[1:21:29] Yes. I think it's very important to do
+[1:21:31] pause. So in fact, so I want to talk a
+[1:21:34] little bit about positive futures and uh
+[1:21:36] the uh most of the positive futures what
+[1:21:38] they involve is some kind of a pause.
+[1:21:43] However, uh I also think that you know
+[1:21:46] people in general and uh politicians are
+[1:21:49] are not stupid. Uh so so we need to try
+[1:21:53] to base our arguments on deeper
+[1:21:56] understanding not just you know vibes
+[1:21:58] and intuitions. Sure. And so as
+[1:22:01] scientists I think our role is to gain
+[1:22:03] as much understanding as we can and
+[1:22:05] present it as clear as we can. And that
+[1:22:08] is likely to be an effective way. maybe
+[1:22:11] some surprisingly effective way to to
+[1:22:13] promote things. Um, and you know,
+[1:22:17] anything we can to to achieve pause is
+[1:22:19] just something I would definitely
+[1:22:20] welcome.
+[1:22:21] >> I I I just find it kind of surprising
+[1:22:23] that like the people that are developing
+[1:22:24] it are having these trajectory
+[1:22:26] predictions. Yes. And that that isn't
+[1:22:28] enough to like convince people that
+[1:22:30] >> positive. Yeah. Yeah. It's a little bit
+[1:22:32] surprising that um Yeah. I think it's
+[1:22:35] Yeah. Some uh Yeah. Many people don't
+[1:22:38] believe the story because maybe in part
+[1:22:40] because all uh that uh you know people
+[1:22:44] in these companies can offer are kind of
+[1:22:47] big stories and metaphors but we in
+[1:22:50] terms of science we're not there yet to
+[1:22:52] trick
+[1:22:54] um
+[1:22:57] >> yeah I was just going to follow up on
+[1:22:59] that. I think like a big reason for the
+[1:23:01] want to pause is like these like
+[1:23:02] international dynamics that there's like
+[1:23:05] I think we kind of skipped over like
+[1:23:06] possible race dynamics between like US
+[1:23:09] and China right a lot of people are like
+[1:23:10] very worried about that um and so like
+[1:23:14] even though these companies are like
+[1:23:16] yeah we probably shouldn't it's like oh
+[1:23:18] well maybe if we do then I know we'll
+[1:23:21] overink like something that's a big
+[1:23:25] reason why people are so
+[1:23:27] >> not just US polic policy, but like
+[1:23:29] international policy has protocol
+[1:23:32] solved. I guess that's what
+[1:23:33] >> so it's it's a fairly tricky cooperation
+[1:23:36] cooperation problem both on especially
+[1:23:39] on international level. Um
+[1:23:42] okay uh so let me mention a few positive
+[1:23:46] stories.
+[1:23:48] So the same group that came up with AI
+[1:23:50] 2027 wrote this AI 2040 plan and indeed
+[1:23:55] the core aspect of of of their positive
+[1:23:58] plan is a deal between US and China to
+[1:24:02] slow development and it's it's a deal
+[1:24:05] that's really tricky to implement. Uh so
+[1:24:08] there was an used to be an essay by
+[1:24:09] Dario Amade maybe just include or
+[1:24:12] released a couple of days ago where also
+[1:24:15] talks about that but he you know he says
+[1:24:17] that this is may probably extremely
+[1:24:18] difficult to do and the idea is because
+[1:24:20] there's little trust and there's strong
+[1:24:24] incentive to say yes we will slow and
+[1:24:26] secretly just rush ahead. uh then it has
+[1:24:29] to be implemented uh in a very careful
+[1:24:32] way on the hardware level where you
+[1:24:35] actually leech uh sufficient deadass GPU
+[1:24:37] that one would need for frontier
+[1:24:39] training runs you uh install uh certain
+[1:24:43] monitoring devices in those GPUs you
+[1:24:45] figure out a way to distinguish between
+[1:24:48] training and inference right so on the
+[1:24:50] data centers you have um constant
+[1:24:53] monitors that are checking what's
+[1:24:55] happening uh even more they have this
+[1:24:58] idea of uh u mutual mutually assured
+[1:25:02] compute destruction where uh China's
+[1:25:06] data centers are here in Canada and US
+[1:25:09] data centers are in Mongolia. So the two
+[1:25:13] sides know that the other one starts to
+[1:25:15] rush the train towards super
+[1:25:17] intelligence that they can quickly seize
+[1:25:19] seize the data center.
+[1:25:24] Uh so so so yeah they have this uh many
+[1:25:27] ideas about how uh this
+[1:25:30] very low process uh coordination can
+[1:25:33] work but their point is that we stop at
+[1:25:36] a fairly high but not yet uh you know
+[1:25:38] super intelligent level not yet risky
+[1:25:41] level. Um and at this point because the
+[1:25:44] compute is under control uh AI companies
+[1:25:47] can share their secrets and the whole uh
+[1:25:51] you know the whole world everybody can
+[1:25:52] work the whole scientific community can
+[1:25:54] work on alignment and also use
+[1:25:58] and also use you know this fairly
+[1:26:00] advanced uh AI to help us with alignment
+[1:26:03] and we spend 10 years doing that and
+[1:26:06] hopefully you know by the end of 10
+[1:26:08] years we figure out how to create a safe
+[1:26:11] uh very powerful AI and we do skate RSI
+[1:26:14] and there are many positive things with
+[1:26:16] self poverty so climate change that
+[1:26:18] human lives many diseases are uh cured
+[1:26:21] and so we've been a much better world
+[1:26:24] um at that point so that's kind of the
+[1:26:27] positive vision they assume in their
+[1:26:28] plan they imagine that US behaves as
+[1:26:32] hard as it is to do it in an optimal way
+[1:26:35] optimal irrational way and China behaves
+[1:26:38] like they think China would actually
+[1:26:40] behave so it's a kind control
+[1:26:41] recommendation for the US.
+[1:26:44] Um so this is kind of a positive plan
+[1:26:47] for uh for the world where RSI is
+[1:26:49] possible. Um there's also a nice uh uh
+[1:26:53] essay by Norah man who's an AI
+[1:26:56] researcher that maybe belongs more into
+[1:26:59] the more gradual AI development where
+[1:27:03] the the core idea is that each person
+[1:27:05] has a powerful AI system that's
+[1:27:09] advocating for them. And so that's kind
+[1:27:12] of uh preventing this type of gradual
+[1:27:14] disempowerment dynamic where uh there
+[1:27:19] aren't you know there's a there's the
+[1:27:21] kind of uh the incentives are set up
+[1:27:26] carefully in order not to create uh
+[1:27:29] concentration of power in the hands of a
+[1:27:31] small group of people and eventually
+[1:27:34] just with the eyes itself. uh but we're
+[1:27:37] you know always thinking carefully about
+[1:27:39] how to make sure that uh AI advances
+[1:27:42] each person's interest uh as much as
+[1:27:44] possible and that alignment research uh
+[1:27:48] kind of progresses fast enough to make
+[1:27:51] AI sufficiently aligned with the person
+[1:27:52] that they represent and advocate for
+[1:27:54] them in the democracy um to to make this
+[1:27:57] program. It's it's a nice nice essay to
+[1:28:00] read. There aren't actually that many
+[1:28:02] essays with positive traditions. So it's
+[1:28:05] nice it's nice to read some of them not
+[1:28:08] maybe super detailed but outline some of
+[1:28:10] the ideas and and yes indeed most
+[1:28:12] positive futures do involve uh some kind
+[1:28:16] of pause
+[1:28:18] um you know many of these companies are
+[1:28:21] indicating that they are interested in
+[1:28:23] the pause there they signed uh this long
+[1:28:28] the statement in um in July um asking
+[1:28:32] for the US government to basically
+[1:28:34] regulate them not to advance too fast.
+[1:28:37] We request the US government support
+[1:28:38] international effort to develop the
+[1:28:40] technical and governance tools given to
+[1:28:42] deliberately pace the frontiers. That's
+[1:28:44] just euphemistic use
+[1:28:47] some kind of slower development uh and
+[1:28:50] it's signed by uh science research at
+[1:28:54] pretty much all labs most at least most
+[1:28:57] labs.
+[1:28:59] Then Dar Amade posted this um essay. Uh
+[1:29:04] he said that they will have uh they will
+[1:29:07] ask independent researchers uh to be
+[1:29:10] there uh all the time and have full
+[1:29:13] access give them full access to their
+[1:29:15] training uh runs to be able to evaluate
+[1:29:19] risks and he urged other uh
+[1:29:24] companies to do that and uh Sam Alman
+[1:29:26] said that he will also do it.
+[1:29:29] Even though last tweeted that was right
+[1:29:34] and yes there will be some kind of uh
+[1:29:38] meeting between US and China in the end
+[1:29:40] of September discussing something
+[1:29:44] uh at the same time yes there openai
+[1:29:47] does uh president is uh I mean a lot of
+[1:29:52] money into uh preventing AI regulation
+[1:29:56] uh And there are particular many people
+[1:29:59] in the Trump administration who are
+[1:30:02] against any kind of regulation. Trump in
+[1:30:04] particular have made statements about
+[1:30:07] safety is death that people could talk
+[1:30:09] about the dangers of that and where CI
+[1:30:12] ls and yeah so so good is that
+[1:30:17] it's a little bit unclear
+[1:30:20] and so like what does the winds mean
+[1:30:23] here? What is the chance like it's a
+[1:30:26] mass murder or something for people what
+[1:30:28] else does it mean to win the
+[1:30:37] >> I mean the language like you say the US
+[1:30:38] has to act optimally like this is the
+[1:30:40] exact opposite
+[1:30:41] >> that's exactly as the war that somebody
+[1:30:44] has to win
+[1:30:49] >> said
+[1:30:52] something
+[1:30:58] I don't think
+[1:31:01] but even the AI people are involved
+[1:31:12] I don't think
+[1:31:14] I don't think they are
+[1:31:18] it I think it's if if they're I think if
+[1:31:21] people realize the danger they may act
+[1:31:23] uh a bit better we did manage not to
+[1:31:25] have nuclear war so far even though
+[1:31:28] smartest people in the you know
+[1:31:31] predicted nuclear war very soon
+[1:31:35] was famously advocating the bombs
+[1:31:38] um so
+[1:31:44] it's
+[1:31:54] U so we are mathematicians and we'll use
+[1:31:58] the tool that we have now. Uh so let me
+[1:32:01] actually start with another meaning
+[1:32:03] against that if we so imagine we do get
+[1:32:06] the pause or you know the progress
+[1:32:09] doesn't happen so as fast as some of the
+[1:32:12] most um concerning predictions but we do
+[1:32:16] get a little bit of time to try to
+[1:32:18] figure out and try to figure out uh
+[1:32:21] whether or not we can actually make
+[1:32:24] recursive self-improvement say um and
+[1:32:27] and we want to use mathematics. So one
+[1:32:31] maybe there are two reasons to argue
+[1:32:33] against the use of mathematics here and
+[1:32:36] so one is the famous essay by Richard
+[1:32:38] Sutton
+[1:32:40] which uh is you know so the machine
+[1:32:43] learning community is really steeped
+[1:32:44] into that lesson the idea that methods
+[1:32:47] that scale well with compute always win
+[1:32:50] whereas people with you know very uh
+[1:32:53] specific domain expertise
+[1:32:56] even if they seem to come up with you
+[1:32:58] know very clever solutions or the so
+[1:33:00] there's a grandmaster in chess who knows
+[1:33:02] chess very well eventually much simpler
+[1:33:05] uh algorithm which is designed by
+[1:33:08] someone who now knows very little about
+[1:33:10] chess will will win that
+[1:33:13] and and on the other hand in AI
+[1:33:17] development capability in in
+[1:33:19] capabilities growth in particular uh
+[1:33:21] mathematical theories of machine
+[1:33:23] learning have not been very useful and
+[1:33:25] sometimes counterproductive this is a
+[1:33:27] famous meme that Julia has posted uh
+[1:33:30] where he compares statistical learning
+[1:33:33] predictions which you know weren't very
+[1:33:35] optimistic about neural networks and and
+[1:33:38] you know people who actually uh did the
+[1:33:41] work by him and just added more layers
+[1:33:44] just scaled things and things just went
+[1:33:47] very well even though theory did not at
+[1:33:49] the moment predict that this would
+[1:33:51] happen and so theory was playing a lot
+[1:33:53] of catchup with uh AI capabilities
+[1:33:58] And so uh in particular in the safety
+[1:34:00] communities there there are people who
+[1:34:02] say well we should you know just try to
+[1:34:05] make AI make itself safe just need to
+[1:34:08] you know put more compute into safety
+[1:34:10] and say go ahead make yourself safe.
+[1:34:14] [laughter]
+[1:34:14] So I think that's some of the thinking
+[1:34:16] that happens at at least some of the
+[1:34:17] labs and and and let me argue against
+[1:34:21] that um that well so these this year
+[1:34:25] graphs that we looked at they're not
+[1:34:27] laws of nature uh at least for now
+[1:34:30] humans still have some agency
+[1:34:32] and
+[1:34:34] AI safety is really about us humans
+[1:34:38] making decisions that are good for us
+[1:34:41] being able to trust our understanding of
+[1:34:43] things. being able to trust uh machines.
+[1:34:47] So,
+[1:34:50] so that means that we do need to have
+[1:34:52] some understanding in our
+[1:34:57] mathematics has very good tools for it.
+[1:34:59] So, there's mathematical tools which is
+[1:35:02] one of the things we can trust more than
+[1:35:05] most other things and we have developed
+[1:35:08] tools for understanding quantitative
+[1:35:10] things.
+[1:35:13] So, so this is that's my you know very I
+[1:35:16] guess short pitch for mathematics and
+[1:35:18] I'm not saying that mathematics is the
+[1:35:19] only thing that would be needed but it's
+[1:35:22] a very difficult problem and all people
+[1:35:25] need to be working on you know
+[1:35:26] physicists should be working on it we
+[1:35:28] have very good theories of deep learning
+[1:35:30] philosophers should be working on
+[1:35:32] activists political scientists should be
+[1:35:35] working should be working but there's
+[1:35:37] definitely something important that we
+[1:35:38] can contribute
+[1:35:41] my
+[1:35:53] Yeah.
+[1:35:54] >> So what does that thing you mean by
+[1:35:55] human trust? Sometimes like trusting.
+[1:35:58] >> So when can a true human trust something
+[1:36:01] >> trusting the AI?
+[1:36:02] >> Trust in AI trust our understanding of
+[1:36:04] the decision. Correct. So you know
+[1:36:05] someone will be sitting uh you know near
+[1:36:08] that u red button or clear and will
+[1:36:11] start RSI and they will have something
+[1:36:13] in their head some understanding of why
+[1:36:15] it's good. Can they trust that
+[1:36:17] understanding
+[1:36:20] >> right? Yep. Um guess maybe we'll talk
+[1:36:24] about this in the next
+[1:36:26] number of lectures but it seems to me
+[1:36:28] from Simon's talk I don't know very much
+[1:36:32] but it seems to me that the like main
+[1:36:34] approach some sort of game theoretic
+[1:36:36] approach or some sort of like more CSS
+[1:36:38] thing
+[1:36:40] >> um if somebody were interested in this
+[1:36:42] and were doing or were more interested
+[1:36:45] in something like geometry or geometric
+[1:36:47] analysis right then like how
+[1:36:50] >> how clear is it that this sort of
+[1:36:52] thinking or this sort of math could be
+[1:36:54] applied to this whether how relevant are
+[1:36:56] AI safety questions to PES and vice
+[1:37:00] versa.
+[1:37:01] >> Yeah, wonderful question and uh so let
+[1:37:05] me get to that. Uh so the truth is that
+[1:37:08] the field is very wide
+[1:37:11] and uh let me mention some of the things
+[1:37:14] and they're not at all exhaustive and we
+[1:37:16] will also talk about other things in
+[1:37:18] this course. uh but they patch up on
+[1:37:20] many different areas in particular on uh
+[1:37:24] intelligence
+[1:37:26] um in important ways. So first of all we
+[1:37:30] do want to get some clarity about the
+[1:37:32] trajectories right uh how will RSI go or
+[1:37:37] if it doesn't happen what what what can
+[1:37:40] we expect from the future and so we need
+[1:37:42] to understand better the current AI
+[1:37:44] systems and how uh their uh capabilities
+[1:37:48] scale with compute and with other
+[1:37:50] improvement and so there's quite a bit
+[1:37:52] of mathematics involved there uh so a
+[1:37:56] lot of it is uh coming from statistical
+[1:37:59] physics and uh probability theory,
+[1:38:01] random matrix theory, but we have some
+[1:38:03] explanations about scaling laws. We have
+[1:38:06] some explanations for sudden jumps in AI
+[1:38:07] capabilities that uh we observed in
+[1:38:10] brought in and in context learning
+[1:38:13] from the alignment point of view. We
+[1:38:15] want to one of the most important things
+[1:38:16] that goes into uh a model is uh training
+[1:38:20] data. So we want to better understand
+[1:38:22] how training data influences uh the
+[1:38:24] model and there's also quite a bit of
+[1:38:26] interesting mathematics there of of
+[1:38:29] different kinds
+[1:38:31] and one thing that we really don't
+[1:38:33] understand very well is what
+[1:38:34] reinforcement learning is doing to the
+[1:38:36] models and uh this is where the most
+[1:38:39] concerning behavior seems to be coming
+[1:38:41] from. So many areas we don't even yet
+[1:38:45] know what is the best mathematics there.
+[1:38:47] Uh
+[1:38:49] and yeah I think that's that's maybe
+[1:38:52] both exciting but also maybe treating
+[1:38:54] kind of used to working on on a field
+[1:38:57] that's been there for 100 years
+[1:38:59] continuing what has been done but here
+[1:39:01] kind of has to come up with ideas uh
+[1:39:03] from scratch. Uh so there's a lot of
+[1:39:07] geometry inside LMS. Uh so they're uh
+[1:39:11] you can think about them as just
+[1:39:12] collection of of vector spaces of you
+[1:39:15] know 1,000 to 10,000 dimensions and
+[1:39:17] there is surprising amount of
+[1:39:19] information that can be extracted with
+[1:39:21] fairly simple methods which just linear
+[1:39:23] maps about what the model is thinking.
+[1:39:26] So we were discussing monitorability and
+[1:39:29] you know the danger of chain of thought
+[1:39:31] becoming less and less monitorable and
+[1:39:33] legible and so then if you don't have
+[1:39:35] that what do you do? when we look at the
+[1:39:37] sets and we try to understand uh what
+[1:39:41] the the model is thinking about and we
+[1:39:44] have some methods for doing that but
+[1:39:46] right now uh they're mostly linear and
+[1:39:51] uh
+[1:39:54] we also know that there are some
+[1:39:55] interesting low dimensional angles
+[1:39:57] appearing there sometimes. So
+[1:39:59] understanding the kind of nonlinear
+[1:40:02] pertubations to that linear structure uh
+[1:40:05] will be very very useful and important
+[1:40:07] for monitors of LMS.
+[1:40:10] Um then because of the you know speed
+[1:40:15] and number of these models we inevitably
+[1:40:18] have to rely on other AIS to to monitor
+[1:40:21] and so we need to think about setting up
+[1:40:22] the systems uh in a way. So this is what
+[1:40:26] scalable oversight is all about.
+[1:40:29] Then we want to be able to trust that
+[1:40:33] the system is safe and probably the best
+[1:40:35] you know guarantee of trust that we have
+[1:40:37] as a mathematical proof that it's safe
+[1:40:40] and AI has done uh great uh you know has
+[1:40:44] we've seen a lot of progress in uh
+[1:40:46] formalization using link for
+[1:40:48] mathematical theorems and what we want
+[1:40:50] to do is we want to push it as much as
+[1:40:51] we can into the safety real how can we
+[1:40:55] prove that various things are safe using
+[1:40:58] formal language, right? And how do we
+[1:41:00] write safety certificates? Of course,
+[1:41:03] that cannot be written for everything,
+[1:41:04] but maybe for some particular systems,
+[1:41:07] we can do that. We can make our uh
+[1:41:09] infrastructure
+[1:41:11] uh more resilient.
+[1:41:14] And finally, there's a lot of
+[1:41:16] interesting research that was done
+[1:41:18] mostly by machine intelligence research
+[1:41:20] institute thinking about um
+[1:41:24] um you know, what does it mean for an
+[1:41:26] agent to for some idealized agent to
+[1:41:29] occur in the world that the world can
+[1:41:31] affect it. Something that Jacob has
+[1:41:32] talked about how uh decisions are being
+[1:41:36] made, how utility functions can be
+[1:41:38] maximized or modified. So just general
+[1:41:41] framework for thinking about the world
+[1:41:42] where super intelligence exists. Um and
+[1:41:45] and because they were a small group and
+[1:41:47] everyone was laughing at them because
+[1:41:49] come on, you know, BI is not going to be
+[1:41:51] here for the next 100 years. uh I think
+[1:41:54] there's a lot of progress that can be
+[1:41:56] made. So, so this area is generally
+[1:41:58] known as ancient foundations and there
+[1:42:00] are some interesting ideas that have
+[1:42:01] been developed and and and then I didn't
+[1:42:04] include uh I was I meant to include also
+[1:42:07] uh game theory of agent to agent
+[1:42:08] interactions uh which you know uh as we
+[1:42:12] seen in this incident is something
+[1:42:13] that's quite important over time. Um,
+[1:42:17] even if we had like some kind of safety
+[1:42:20] mechanism that we like proved
+[1:42:21] mathematically like you can always do
+[1:42:23] this or whatever, right?
+[1:42:24] >> Isn't it like separate from actually
+[1:42:26] getting the AI companies to like keep me
+[1:42:28] up like or
+[1:42:29] >> Yes. Yes. Uh that's right. That's right.
+[1:42:32] It be it if you develop these ideas then
+[1:42:35] but the truth is they actually
+[1:42:38] don't want to die. We sign all these
+[1:42:41] letters about how we don't want to die.
+[1:42:43] So there's a lot of people uh there's a
+[1:42:45] lot of people there who are interested
+[1:42:47] in safety. Uh I think if you have good
+[1:42:52] ideas and there is some regulation in
+[1:42:56] place that doesn't you know make that
+[1:42:58] prevents companies from rushing as fast
+[1:43:00] as then things can go.
+[1:43:04] So it's a combination of of some
+[1:43:06] regulation plus some good ideas. See if
+[1:43:08] we get a little bit
+[1:43:10] easy to go to a government and say if
+[1:43:12] here's a list of things you can choose
+[1:43:13] then do something like package possible.
+[1:43:19] >> What can be the extent of the I say
+[1:43:21] research in general when the all
+[1:43:23] technologies kept
+[1:43:25] >> well the uh the openweight models are
+[1:43:29] you know maybe six months to a year
+[1:43:31] behind the frontier and you can
+[1:43:34] experiment on them. Um
+[1:43:37] If you're if you're interested in
+[1:43:39] training, unfortunately we don't have
+[1:43:41] checkpoints for that many models. Uh but
+[1:43:43] but we do have for some. So actually
+[1:43:46] quite a bit of research can be done.
+[1:43:49] Um and and hopefully this tells us even
+[1:43:51] though it's a little bit behind it tells
+[1:43:53] you so can tell you in terms of for
+[1:43:56] example geometry of neural oxidations.
+[1:43:58] It's a lot of things that you can see
+[1:44:00] and understand in some smaller
+[1:44:12] Thank you guys. See you.

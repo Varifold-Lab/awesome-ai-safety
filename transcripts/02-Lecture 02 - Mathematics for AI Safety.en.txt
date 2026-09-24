@@ -1,0 +1,1046 @@
+YouTube transcript
+Video ID: -XmDvvHqfLI
+Language: en
+Captions: auto-generated
+
+[0:00] What's more convenient for people to
+[0:02] start uh
+[0:05] uft time than after
+[0:09] then exactly or 5 minutes in between the
+[0:13] two
+[0:15] in between.
+[0:17] >> Good. Um
+[0:20] okay so let me
+[0:26] >> exact is better otherwise people are
+[0:28] confused.
+[0:31] That's right. So, just 10. Okay, let's
+[0:34] let's do that. So, uh I don't see any
+[0:36] comments from people on Zoom about
+[0:39] whether um
+[0:42] you can hear stuff.
+[0:46] >> Yes. Oh, thank you. Okay, great.
+[0:49] [snorts] Um so,
+[0:51] just a little bit more philosophy before
+[0:54] we do uh a little bit of math. uh
+[0:57] because there was some really nice
+[0:59] discussion, some very nice questions uh
+[1:01] last time and uh so I just wanted to
+[1:04] kind of quickly go over that. So if you
+[1:07] guys have seen uh the movie Oppenheimer
+[1:11] uh then there's a there is an
+[1:13] interesting moment in there where uh uh
+[1:16] Edward Teller suggests to uh Openheimr
+[1:20] in uh 1942 I believe that uh there's a
+[1:25] possibility of starting a chain reaction
+[1:27] in the nitrogen and they might you know
+[1:30] when they do the training test they
+[1:31] might actually set the atmosphere on
+[1:33] fire and so in the movie Oppenheimer
+[1:35] goes to Einstein
+[1:37] uh and you know describes this
+[1:39] possibility, asks him for advice and uh
+[1:43] uh uh Einstein says uh well this is very
+[1:48] serious. If you you know figure out that
+[1:50] this is indeed something that can happen
+[1:52] then of course you shouldn't do it but
+[1:54] moreover you should tell the Nazis that
+[1:56] this is something that can happen. So
+[1:58] they don't do it because you know the
+[1:59] thing is so important that you should
+[2:00] even collaborate with the Nazis.
+[2:03] uh and then he tells them to go to a
+[2:06] different physicist who actually
+[2:07] understands the math and sit down and
+[2:09] carefully check. Uh so so the
+[2:12] conversation with uh Einstein didn't
+[2:14] happen. They invented it for the movie.
+[2:16] But you know everything else did
+[2:17] actually happen. uh Edward Teller did uh
+[2:20] kind of consider that possibility did
+[2:22] suggest that to Openheimr and Openheimer
+[2:24] did take uh a train all the way from
+[2:26] Berkeley to Michigan to talk to Arthur
+[2:29] Compton and they sat down and they spent
+[2:31] the whole day calculating uh and
+[2:34] figuring out whether something like that
+[2:35] can happen or not and and then they uh
+[2:38] kind of convince themselves that it's
+[2:40] not going to happen that it's safe there
+[2:42] will not be a chain reaction that sets
+[2:44] the whole atmosphere on fire and
+[2:46] destroys all life on Earth and and uh
+[2:50] later Compton wrote in his in his
+[2:52] memoirs that indeed you know they were
+[2:53] really worried and if it turned out that
+[2:55] there was a risk like that and yes
+[2:57] certainly they would have to collaborate
+[2:58] with the Nazis to to to kind of not do
+[3:02] that. So okay so what's what's the moral
+[3:05] of the story? So, so the uh uh many many
+[3:08] people last time, a few people last time
+[3:11] kind of uh uh brought up this um you
+[3:15] know question about um you know advocacy
+[3:19] versus uh
+[3:21] uh research and and and and and the
+[3:25] analogy here is now a bunch of people uh
+[3:28] uh AI AI scientists are telling us that
+[3:30] there's you know very large risk uh
+[3:33] associated to developing AI and we would
+[3:37] really like to take a train to someone
+[3:40] and sit down with them and calculate and
+[3:42] you know figure out whether the risks
+[3:44] are large or maybe they're not large and
+[3:47] uh maybe nobody should do it or maybe we
+[3:49] can do it in a particular safe way. But
+[3:51] unfortunately we do not have a
+[3:54] scientific theory like they had
+[3:56] scientific theory of uh nuclear physics.
+[4:00] We do not have scientific theory of uh
+[4:02] intelligence
+[4:04] uh of uh you know uh neural networks
+[4:08] and uh and so we cannot do that
+[4:11] calculation and that's that's kind of a
+[4:12] big difference
+[4:16] and so so there is you know a big debate
+[4:19] in the AI safety community about working
+[4:22] on policy versus working on technical uh
+[4:25] AI safety uh questions And I I don't
+[4:31] have an answer. I do think that
+[4:32] advancing AI regulation is very
+[4:33] important uh for reducing catastrophic
+[4:35] risk from AI. Uh so there are small
+[4:38] things that you know that we can do. If
+[4:40] we think that this is important, we can
+[4:42] write to our MP. Uh we can you know talk
+[4:45] to our friends and discuss this and try
+[4:47] to understand the issues better.
+[4:50] uh at the same time uh you know even
+[4:54] very good regulation probably just buys
+[4:56] us some time and eventually we would
+[4:59] need to have some kind of clarity around
+[5:01] these issues. Um and uh even if there's
+[5:06] no good regulation uh there is still
+[5:09] huge amount of uncertainty and uh there
+[5:11] is still likelihood that we have some
+[5:14] time right that some uh worst types of
+[5:16] catastrophes won't happen until until
+[5:18] some time and and and so in this case we
+[5:21] do need to do the research
+[5:23] and uh uh and finally uh good progress
+[5:27] in understanding the systems is really
+[5:30] helpful for informing regulation.
+[5:33] Um so these are you know some of the
+[5:35] points why I think uh this is a
+[5:38] difficult large problem and people
+[5:40] should be working on it from different
+[5:41] angles and every person should decide
+[5:43] for themselves what what's what's the
+[5:45] best approach but I think any way in
+[5:48] which we can reduce uncertainty and
+[5:50] increase our understanding our
+[5:52] understanding of things will be very
+[5:54] helpful and especially as scientists we
+[5:57] should try to be honest not try to you
+[5:59] know uh make claims and predict ictions
+[6:02] that we think uh uh you know will guide
+[6:06] society in some particular way we want
+[6:08] but we should actually talk about things
+[6:10] the way we understand them in the most
+[6:12] honest way. I think that's a more uh
+[6:14] effective strategy long term and
+[6:17] unfortunately there is just so much uh
+[6:20] uncertainty that that it's difficult for
+[6:22] us u you know to uh uh to uh give very
+[6:27] good uh policy prescriptions and
+[6:29] reducing that uncertainty is would be
+[6:31] super super crucial. So that's my little
+[6:35] spiel in the beginning. Um anyone has
+[6:38] comments, disagreements?
+[6:43] Okay. So this is I think part of the
+[6:45] motivation about uh uh working uh on AI
+[6:49] safety and and I guess another part is
+[6:51] that uh if you forget about you know uh
+[6:55] risks to us and and and and how will it
+[6:58] will affect us and just think about from
+[7:00] a purely curiosity point of view this
+[7:03] time is super super exciting. It's like
+[7:06] the beginning of 20th century when you
+[7:08] had all of this uh you know
+[7:09] Michaelelsson Moly experiments you had
+[7:11] black body radiation you had um a lot of
+[7:15] you know very exciting interesting new
+[7:17] information but the theories weren't
+[7:19] there yet and now it's even more
+[7:22] exciting we have all of these
+[7:24] interesting empirical observations about
+[7:27] intelligence about language about uh
+[7:30] fundamental questions you know we
+[7:32] thought about for hundreds of years and
+[7:34] could resolved and now we may be on the
+[7:36] verge of resolving them because we have
+[7:38] this new experimental information and
+[7:41] and it would be really you know
+[7:42] interesting to try to understand them.
+[7:45] So yeah
+[7:47] >> I I have some policy versus uh safety
+[7:51] type discussion questions. So that we
+[7:54] have so much risk uh and you uh put up
+[7:57] the picture from Oenheimer if if you can
+[8:00] compare that kind of risk compared with
+[8:02] that kind of risk then um
+[8:06] isn't it wise like some politicians say
+[8:09] that we should just completely stop
+[8:11] training this and that and we have the
+[8:14] science science should be funded any
+[8:16] training that happens maybe it could
+[8:17] still be used for scientific purposes
+[8:20] but then is the are the companies
+[8:22] argument that we cannot actually improve
+[8:24] scientific understanding without
+[8:25] training in the way they currently fit
+[8:27] which things aging that can become
+[8:30] dangerous. What's the company's argument
+[8:32] against?
+[8:33] >> Yes.
+[8:33] >> Uh this type of uh reason that they
+[8:37] should only train for scientific
+[8:38] progress.
+[8:39] >> Mhm. Yeah. So I absolutely agree with
+[8:41] you. The main difficulty is
+[8:43] coordination.
+[8:45] The problem is that um
+[8:51] yeah the argument is that yes it would
+[8:54] be great if everyone stopped but we
+[8:57] don't believe the others will stop so we
+[8:59] might as well continue
+[9:02] >> then that's why you should collaborate
+[9:03] with others are the American and Chinese
+[9:06] uh researcher not collaborating enough
+[9:09] >> that's right that's that's why you
+[9:10] should have international agreement
+[9:11] that's why international agreement is
+[9:13] really crucial Yeah, that's that's
+[9:15] that's all the problem, you know,
+[9:17] coordination.
+[9:19] There are people who disagree who think
+[9:21] the risks are uh you know, exaggerated
+[9:23] and we should just uh continue. But it
+[9:27] seems that there's a huge fraction of uh
+[9:29] employees at AI companies who think we
+[9:32] should stop apparently including even
+[9:34] their CEOs.
+[9:40] Um but uh but it's a difficult
+[9:42] coordination problem. So for example, AI
+[9:44] 240 we discussed last time is you know
+[9:46] about what it would take to make this
+[9:48] coordination happen in the situation
+[9:51] where the US and China don't believe
+[9:53] each other and that's why you know the
+[9:55] whole of this we have all of these
+[9:56] mechanisms for installing uh you know
+[9:59] monitors into the hardware and having
+[10:02] groups monitoring each other. So it's
+[10:04] it's fairly complicated in terms of
+[10:06] logistics.
+[10:09] Okay.
+[10:11] Any other comments?
+[10:16] Okay. And so some of the very
+[10:18] interesting uh observations uh made
+[10:22] about uh
+[10:24] uh LLMs um include uh this scaling loss
+[10:31] results from uh 2020 and uh some of them
+[10:34] a little bit earlier, some of them a
+[10:35] little bit later. Um and and and uh I
+[10:40] talked a few years ago to uh uh to
+[10:43] someone who I went to grad school with
+[10:45] uh who who worked at OpenAI at the time
+[10:48] and his perspective was uh that you know
+[10:51] really seeing the scaling loss convinced
+[10:54] him that scaling is the way to go that
+[10:57] you can predictably improve performance
+[11:00] of uh LLMs by just increasing compute
+[11:03] and data and you know we just need to
+[11:05] pour money into it and you know that
+[11:07] things will happen uh that things will
+[11:09] improve
+[11:11] uh so so I think it's an interesting uh
+[11:14] result to to look over and it's also a
+[11:17] result where we still don't have
+[11:18] complete uh understanding of why uh
+[11:21] scaling laws have these exponents we
+[11:23] have a few different perspectives on why
+[11:25] uh this is the case but um we don't have
+[11:28] a complete picture yet so just to
+[11:30] describe the setup we have a language
+[11:32] model uh uh with uh We can uh take uh
+[11:37] any uh sentence. You can break it into
+[11:40] parts which are called tokens. Uh each
+[11:43] token could be a full word, a part of a
+[11:46] word or you know a comma or
+[11:49] a space depending on how you break it.
+[11:54] Um
+[11:56] and so then the training is very simple.
+[11:58] You give uh a collection of tokens and
+[12:01] you try to predict uh the next token. uh
+[12:05] you produce a probability distribution
+[12:07] over next tokens and uh that should
+[12:11] follow it and then you com compare with
+[12:13] the next word that appears there. And so
+[12:17] uh
+[12:19] you can think of the uh large language
+[12:22] model as uh being parameterized by some
+[12:25] very large uh dimensional vector which
+[12:28] corresponds to all of the weights of the
+[12:30] neural network.
+[12:33] Okay.
+[12:35] So, so what is the loss? Uh how do we
+[12:38] measure how bad we predict it? We take
+[12:41] uh the average of negative logs of the
+[12:44] probabilities
+[12:47] of our probability output compared to
+[12:50] the actual output that uh
+[12:54] uh that is in the training data. And so
+[12:58] training will try to minimize this
+[13:00] quantity. So in particular it will try
+[13:02] to maximize the probability that the
+[13:04] output uh
+[13:06] >> S is training data.
+[13:08] >> Uh so here S is the training data. Yes.
+[13:14] >> So so let me so so so so what are the
+[13:17] two things the three things that kind of
+[13:20] uh uh determine what we have in in the
+[13:24] neural network. the the big parameters
+[13:26] are the model size. D is the number of
+[13:30] uh tokens the training data and then C
+[13:34] is uh how many floatingoint operations
+[13:37] we use uh during training and uh
+[13:43] you can relate uh so this is what
+[13:45] actually they did in the in Klan paper
+[13:47] they observed that uh okay uh so there's
+[13:50] no point in uh if you make some
+[13:53] simplifying assumptions about not taking
+[13:55] the same uh tokens and uh doing gradient
+[13:59] update on them uh the same number uh
+[14:02] several times. If you just you know use
+[14:04] all of your tokens
+[14:07] uh that you have in the training data
+[14:08] and you for each one of them you do a
+[14:11] gradient uh uh update then you can
+[14:14] relate uh the num the model size and uh
+[14:18] the amount of training data you have to
+[14:21] uh the number of floating point
+[14:22] operations that you have. So you have a
+[14:24] few of them for a forward pass and then
+[14:27] you have uh a few more for the uh for
+[14:29] the computation of the gradient for back
+[14:31] propagation.
+[14:33] And so then the question was how to uh
+[14:36] correctly allocate this limited compute
+[14:39] resource uh you know between uh the
+[14:43] model size and the training data. Should
+[14:45] you take make the model larger and the
+[14:47] training data smaller or should you make
+[14:49] the model smaller the training uh data
+[14:52] larger? And they found spec uh concrete
+[14:55] very nice curves. So these are uh
+[15:00] uh log law plots.
+[15:03] Uh so these correspond to uh uh the
+[15:08] loss.
+[15:10] And if you fix uh the other two and see
+[15:15] and try to understand how the uh
+[15:18] uh loss changes as you scale
+[15:23] uh one of these parameters, you see a
+[15:25] very nice uh power law where the
+[15:29] dependence is say the data set size to
+[15:32] the power of minus some positive number,
+[15:35] right? And it looks like a line on a log
+[15:37] log plot.
+[15:39] Uh so so that was uh really um
+[15:44] interesting uh that that it kind of held
+[15:47] across different architectures and uh
+[15:51] across different uh scaling regimes
+[15:54] and seemed like that there is some
+[15:56] underlying reason for this to be true.
+[15:59] And also very useful from the
+[16:01] perspective that you can uh uh train a
+[16:05] small model with small uh number of uh
+[16:09] data points and then you can figure out
+[16:11] what the line is and you can predict
+[16:13] where where the next point will have to
+[16:15] go.
+[16:18] So we don't have complete understanding
+[16:20] of why this hold and in fact Kaplan's uh
+[16:23] empirical laws were later updated in
+[16:26] this Hoffman chinchilla paper that's
+[16:28] also in the reading material they found
+[16:30] that uh if you do uh experiments on
+[16:33] bigger models and uh you do uh training
+[16:37] a little bit differently you don't uh
+[16:39] you stop at a different time then
+[16:41] actually you can find uh a different
+[16:44] slope slope that's better than this one.
+[16:47] So they made more accurate uh
+[16:49] predictions but kind of the general
+[16:51] result uh has been replicated by many
+[16:53] people. So I wanted to talk a little bit
+[16:56] about some uh theories of of of why
+[17:00] these types of scaling loss might hold.
+[17:03] So let me
+[17:06] move this and stop
+[17:11] this. Oh no, I think I need to um
+[17:28] Let me turn the lights on.
+[17:42] >> I'm not sure where his lights are.
+[17:46] The light switch is on the outside of
+[17:48] the classroom.
+[17:49] >> Oh, thank you so much.
+[18:00] Okay.
+[18:03] So, uh
+[18:05] any questions? Uh
+[18:15] So uh so we have some uh input space x
+[18:22] uh let's say we have some probability
+[18:24] distribution on the input space
+[18:27] and uh we want to learn a function f
+[18:32] from the input space x into r.
+[18:37] And so our
+[18:40] uh neural network
+[18:43] um is a
+[18:46] collection of many uh many many uh
+[18:49] parameters uh many weights but uh in the
+[18:53] end what you get is some kind of
+[18:54] function from the input to the output
+[18:56] right so theta is going to be in some
+[19:00] space r to the n where n is some large
+[19:02] number corresponding to the number of uh
+[19:05] weights and so It's
+[19:08] a map here
+[19:11] and uh we will want to measure how
+[19:15] different uh our function uh
+[19:19] corresponding to our neural network is
+[19:21] from the desired function. So we have
+[19:23] some way of measuring loss.
+[19:26] So the loss corresponding to parameter
+[19:28] theta uh we will take it to be 1/2 the
+[19:32] L2 norm of the difference.
+[19:45] So uh so this is different from the
+[19:49] negative log likelihood loss that that
+[19:53] uh we have for LLMs.
+[19:56] uh however it's actually much easier to
+[19:58] do theoretical kind of computations on
+[20:01] this loss and if uh and and you can for
+[20:05] example what you can do so so different
+[20:13] from the loss
+[20:15] uh theta being the station
+[20:20] negative log
+[20:22] P
+[20:25] >> uh don't worry. So the output is some
+[20:28] probability distribution. Uh however
+[20:31] what you what you can uh do is uh you
+[20:35] know but
+[20:41] if you pick a particular type of uh
+[20:43] probability distribution which is just
+[20:46] uh normalized uh Gaussian e to the minus
+[20:50] uh
+[20:54] F theta of x
+[21:00] squig
+[21:04] you normalize by
+[21:09] sigma squared.
+[21:11] Then if you plug that in then what
+[21:13] you'll get is uh the same up to an
+[21:15] additive constant
+[21:26] has to be square.
+[21:31] So it's a particular type of
+[21:33] simplification that we're making here.
+[21:35] Okay. And so we are
+[21:38] >> again what is
+[21:41] Thanks.
+[21:43] This is
+[21:47] >> this is this is a function we want to
+[21:48] learn. So so we assume that our
+[21:50] probability distribution is just you
+[21:51] know Gaussian with some
+[21:59] >> so f theta is is the output neural
+[22:02] network and fstar is the correct thing
+[22:05] we want to learn is is the target
+[22:07] function. Is this a realistic assumption
+[22:08] on like text data that it becription
+[22:11] desributed in this way?
+[22:12] >> Uh not not not not really actually. I
+[22:16] mean um
+[22:20] I mean it it dep I mean the very idea of
+[22:23] having you know one correct answer one
+[22:26] correct continuation is is a little bit
+[22:28] suspect.
+[22:31] >> It is an assumption. Yeah.
+[22:34] >> Uh mean square error. So this is MS MSK
+[22:37] MSK loss.
+[22:45] >> It's kind of hard to see the bottom.
+[22:47] >> Okay. Sorry. Uh yeah, I'm I'll try not
+[22:50] not right there. Okay. And uh so how are
+[22:54] we uh optimizing over parameters? Well,
+[22:58] we use gradient descent.
+[23:03] And so what really is happening is a
+[23:05] stochastic version of a dis of of a
+[23:09] discrete version of gradient flow. But
+[23:11] we will use uh here
+[23:16] continuous
+[23:18] limit
+[23:20] just just the gradient flow
+[23:24] uh where
+[23:25] the derivative of the parameter with
+[23:28] respect to time is just equal to
+[23:30] negative uh gradient of the loss
+[23:35] of
+[23:44] Um and okay so it will actually be
+[23:46] convenient to make some changes here.
+[23:48] Let me define g theta of t as um
+[23:54] of x as the difference between f theta
+[23:59] of t minus far.
+[24:02] I mean equivalently you can you can
+[24:05] imagine that you're trying to learn the
+[24:07] zero function although it's maybe not
+[24:11] not so interesting in this case. Um and
+[24:15] so okay so then we can re rewrite uh the
+[24:19] uh gradient theta of uh the loss as okay
+[24:24] so this is gradient of 12 integral / x
+[24:29] of g theta uh of t of
+[24:36] x d mu.
+[24:41] If you assume enough regularity here
+[24:42] then we can differentiate inside the
+[24:45] integral and so then we will have
+[24:47] integral here g uh t of x g theta of t
+[24:53] of x
+[24:55] times the gradient of
+[24:58] uh
+[25:00] f theta of x
+[25:03] or actually I could I could just write
+[25:12] Give me
+[25:15] that. Okay.
+[25:19] >> Uh, I'm missing a square here.
+[25:24] You should go
+[25:40] d theta tx equals the difference from
+[25:44] the distribution. What is x? So uh
+[25:48] so these are x's
+[25:51] and this is this is t. So so x is the
+[25:54] input function. So so x x is the in
+[25:57] input uh data, right? And and t is a
+[26:00] type parameter.
+[26:02] We're trying to train uh our neural
+[26:05] network. So
+[26:14] it's changing with time. Um
+[26:22] okay. So then uh we observe the
+[26:25] following. So we want to try to
+[26:26] understand uh how does our uh neural
+[26:31] network function changes
+[26:35] uh with with respect to time how does it
+[26:39] evolve. So we take the derivative of uh
+[26:42] gt of x. So that's just the difference
+[26:45] between our output and far.
+[26:50] And well uh so that's uh so uh
+[27:00] right so so so this is uh
+[27:05] you know so g depends on the parameter
+[27:08] theta which depends on t. So here we
+[27:12] have chain rule.
+[27:17] So it's going to give us a
+[27:24] a gradient of theta of t g t g t g t g t
+[27:27] g t g t g t g t g t g t g t g t g t g t
+[27:27] g t g t g t g t g t g t uh theta of t x
+[27:34] of theta of t.
+[27:47] Now what we can do is we can substitute
+[27:51] uh this expression. So this is going to
+[27:55] be minus gradient theta of t g theta of
+[28:00] t x uh times the gradient of theta of
+[28:09] l t.
+[28:15] Uh then we can uh put this in here. So
+[28:20] that's going to be minus
+[28:22] uh gradient uh theta
+[28:28] g theta t uh
+[28:37] x
+[28:41] gradient
+[28:44] integral gradient
+[28:47] g of theta of G X prime
+[28:52] uh G
+[28:59] prime
+[29:01] D mu X prime
+[29:07] and then we can take the integral out
+[29:13] uh to get radant theta g theta T of X
+[29:20] gradient G theta of T X prime
+[29:27] G
+[29:39] that's okay
+[29:45] >> uh
+[29:46] well Uh
+[29:55] uh so we know that the derivative of the
+[29:58] uh parameter is minus loss but the loss
+[30:03] is uh I mean I I erased it but
+[30:08] uh uh no I did it's right here right so
+[30:11] the the loss is in
+[30:15] is the integral right over all x prime
+[30:23] still element on j x but it's just
+[30:24] otherwise that x appears twice
+[30:28] >> yes so we are integrating over a
+[30:29] different it's a different dummy
+[30:30] variable right so we're integrating over
+[30:32] all uh yeah so the rate of change of of
+[30:36] of the parameter corresponds to uh uh
+[30:42] >> to the to the gradient of l but l is the
+[30:43] integral over uh
+[30:47] over the difference between f ofx and
+[30:49] okay so so now this is the same thing as
+[30:53] uh so this is the same thing okay I'm
+[30:55] I'm writing here and it's hard to see
+[30:57] but uh and they also told me not to
+[31:00] write here uh okay uh so let me let me
+[31:05] still write this but uh what I want to
+[31:06] say is just uh we can now replace g with
+[31:09] F
+[31:16] uh because they only defer by a constant
+[31:18] uh
+[31:20] in theta.
+[31:28] My terrible writing doesn't help either.
+[31:31] Uh but uh okay. So now let's give this
+[31:34] thing a name.
+[31:36] Uh
+[31:38] so this is x x prime. Let's call this k
+[31:44] uh x comma x prime.
+[31:49] And so then we can uh rewrite.
+[32:03] the derivative of uh
+[32:07] our uh
+[32:10] output network
+[32:16] in terms of this operator. That's going
+[32:18] to be just minus k x prime of
+[32:26] g
+[32:28] to x prime
+[32:31] d mx. Okay.
+[32:36] And we can actually uh give uh this
+[32:39] operator a name. So if you have uh so
+[32:42] defined
+[32:46] operator
+[32:48] t uh
+[32:51] where if you apply t to some s then
+[32:55] that's just uh
+[32:58] integral of uh
+[33:03] k x
+[33:10] GB,
+[33:12] you need a negative
+[33:14] operator.
+[33:15] >> Uh, do I want do I want the negative for
+[33:17] the operator
+[33:19] actually? Uh,
+[33:23] uh, no, I uh
+[33:28] maybe I do not.
+[33:31] Yeah, I don't think I I do want the
+[33:33] negative.
+[33:35] >> Yeah, completely external. These two are
+[33:37] equal. these two linear products. H. So,
+[33:40] so the way we define G uh we define G
+[33:45] theta of T of X to be just the
+[33:48] difference between uh our uh output
+[33:51] neural network function and some fixed
+[33:54] function
+[33:56] the one that we want to learn the target
+[33:57] function that we don't know what it is.
+[33:59] I mean we here here in these expressions
+[34:02] we know but uh uh as we start the
+[34:04] training we want to converge there and
+[34:06] because we're taking gradients with
+[34:07] respect to the parameter it doesn't
+[34:09] change with the parameter and it
+[34:11] disappears.
+[34:12] >> Okay.
+[34:14] >> So in order to find this operator t we
+[34:16] still need to fix f and f star like the
+[34:18] the one we have the one we want to learn
+[34:20] because it's uh in the definition of k
+[34:23] just put a different size that could be
+[34:25] the difference between something else.
+[34:27] >> Uh that's right. So they uh so this
+[34:29] operator K does depend on uh our neural
+[34:34] network. It's it's it's an operator
+[34:36] that's dependent on our neural network
+[34:38] and it's also dependent on time. Yes. So
+[34:41] we can think about it as a time
+[34:43] dependent uh
+[34:52] as a time dependent operator.
+[34:57] Uh so this turns out to be a very uh
+[35:00] nice way of thinking about uh
+[35:06] about this problem. Uh so then you can
+[35:09] describe the uh uh trajectory of your uh
+[35:17] uh now let's just applying this uh
+[35:21] operator to it.
+[35:25] uh
+[35:28] and and and and this is a very nice
+[35:29] operator. You can see that it is uh
+[35:32] symmetric.
+[35:34] You can see that uh it is actually
+[35:37] positive semidefinite.
+[35:39] So so t is
+[35:43] positive
+[35:46] semidefinite.
+[35:56] Let me actually maybe write that down.
+[35:58] So uh
+[36:01] so if you apply t to uh if you take l2
+[36:07] norm of t pi uh subsi
+[36:14] well that's going to give you uh so
+[36:18] that's integral t s p s p s p s p s p s
+[36:20] p s p s p s p s p of x
+[36:24] s of x
+[36:27] du of x. Uh,
+[36:31] well, that's
+[36:34] really going to be a double integral of
+[36:39] kt
+[36:40] uh x x prime s uh
+[36:46] x prime s of x d mu of x
+[36:52] d mu of x prime.
+[36:56] And and then you can rewrite that as uh
+[37:00] uh just the dot product of uh s of x
+[37:07] gradient
+[37:09] theta f theta of x uh
+[37:14] d mux
+[37:17] dotproduct with um s x prime
+[37:23] gradient. So that's just going to be the
+[37:25] norm
+[37:30] of uh
+[37:36] well but these two things are the same.
+[37:38] This is just going to be norm. So this
+[37:40] to be greater than zero.
+[37:50] So we have that t is a uh
+[37:54] self adjint uh
+[38:01] positive definite operator.
+[38:40] Is is this okay? I scribbled down there.
+[38:47] >> K some kind of a
+[38:49] >> Yes. So K uh so K they call it the
+[38:51] kernel and uh it's a very useful thing
+[38:56] you know to to approximate your neural
+[38:58] network and in fact so there's a
+[39:00] particular observation uh that uh goes
+[39:06] way back to the 90s uh in you know by
+[39:09] people in this department that if you
+[39:11] take uh the width of neural network very
+[39:14] large then uh and if you make the
+[39:16] learning rate kind of slow compared to
+[39:19] the width of the neural network. Uh then
+[39:21] this K becomes converges to a constant
+[39:24] kernel. And so you can think of your
+[39:27] learning as just learning with this
+[39:29] particular constant kernel. And so then
+[39:31] all you need to understand is how
+[39:34] different IEN values functions of this
+[39:37] kernel are
+[39:39] are alert.
+[39:42] >> Well, you come up the K being large or
+[39:46] small means what? is large means that
+[39:48] moving X kind of is opposite of just
+[39:50] kind of it's exponents right and then
+[39:53] >> right yes so it's a kind of a
+[39:54] correlation between between you know
+[39:57] moving in one direction and the other
+[39:58] direction for different inputs yes
+[40:01] that's right so which inputs are kind of
+[40:03] you know pushing in the same direction
+[40:04] and which inputs are are are pushing in
+[40:07] different directions exactly
+[40:09] and and so it's uh convenient to assume
+[40:12] that it's also compact so we will assume
+[40:14] that uh kxx x prime uh is
+[40:23] less than infinity. So that means that
+[40:28] t is a compact operator.
+[40:33] And then a spectral theorem
+[40:40] tells us that uh we have uh a sequence
+[40:44] of values
+[40:48] that are converging to zero.
+[40:51] So lambda 1 of t greater equal than
+[40:55] lambda 2 of t greater equal than lambda
+[40:58] 3 of t with uh finite multiplicities
+[41:02] uh
+[41:04] uh all greater equal to zero uh and
+[41:06] accumulating to zero um and uh and we
+[41:11] have corresponding
+[41:15] bases
+[41:17] value zero
+[41:21] Yes, if it's
+[41:23] uh it's yeah if it's uh
+[41:27] yeah yeah yeah that can happen uh
+[41:33] if you have a particularly simple
+[41:35] curtain yeah
+[41:39] and we have a corresponding basis of
+[41:41] functions
+[41:51] See?
+[41:59] Okay.
+[42:03] And so now we can uh
+[42:08] rewrite the key objects
+[42:11] uh that we want to understand
+[42:14] as uh linear combinations of these
+[42:16] functions and
+[42:19] uh use a spectral approach to kind of
+[42:22] understand how learning happens. And
+[42:23] we'll see that uh it leads to some kind
+[42:26] of uh power law uh scaling law for the
+[42:29] loss.
+[42:34] Uh
+[42:36] okay. So,
+[42:41] [clears throat]
+[42:43] so we can write
+[42:46] the prime
+[42:50] our target function f ofx as uh a linear
+[42:55] combination from x to infinity of uh
+[43:04] a a 18
+[43:12] and uh
+[43:15] so so here we're now making a a serious
+[43:19] simplification a serious simplifying
+[43:22] assumption
+[43:25] is that we will assume that
+[43:28] uh KT and that that that's TT and
+[43:33] therefore all of the uh values and again
+[43:37] function is frozen
+[43:42] in time.
+[43:47] And so this is indeed something that
+[43:49] happens in particular regimes of uh uh
+[43:53] training uh neural networks. They're not
+[43:56] the most interesting ones, but they're
+[43:58] kind of the easiest ones to analyze. And
+[44:00] what usually people do is they analyze
+[44:02] this regime where this uh operator is is
+[44:07] fixed with time and then they add
+[44:09] various perturbations uh to understand
+[44:12] how uh what can we do when it's actually
+[44:14] evolving. So, so this regime is known as
+[44:17] neural tangent kernel regime and this uh
+[44:20] k or t is uh called neural tangent
+[44:24] kernel
+[44:32] and the igen values the sorry the igen
+[44:35] functions of this operator are often
+[44:37] called features or some something you
+[44:40] know sometimes you multiply it by square
+[44:42] root of the uh value and you call that
+[44:44] feature But so various things derived
+[44:46] from this functions are called features.
+[44:48] And so the regime where this operator is
+[44:51] changing is called feature learning
+[44:54] regime. And it's more interesting and we
+[44:56] know that it's important that neural
+[44:58] networks do that that uh feature
+[45:01] learning is happening. Uh but usually
+[45:03] the first step to to to develop theory
+[45:05] is to look at this uh more simple uh
+[45:15] anti-kime
+[45:19] brings something.
+[45:22] >> Oh,
+[45:27] I'm not sure.
+[45:29] >> Not it could be it could be helpful but
+[45:32] not for I don't think it's you know for
+[45:35] complicated
+[45:36] um yeah maybe there is a way of thinking
+[45:38] about it the right way but I'm not sure.
+[45:41] Anyone has Yeah. And when is this frozen
+[45:44] in time approximation valve? Is it in
+[45:46] the infinite width limit?
+[45:48] >> That's right. Very very large width
+[45:50] limit uh compared to uh to the amount of
+[45:53] of data. So actually what are we looking
+[45:57] at here? So what is t? How is it related
+[45:59] to everything else? Well, we can think
+[46:01] about it as being very closely related
+[46:03] to data. So we're really thinking about
+[46:06] uh fixing some number of parameters and
+[46:09] then trying to understand how scaling
+[46:11] happens as we increase data and uh the
+[46:15] training time is our proxy for for how
+[46:18] much data we have.
+[46:20] number of training steps is is is
+[46:22] something that uh we measure data with.
+[46:24] uh and and we are here we're in the
+[46:26] situation where uh the width is very
+[46:29] very large and the uh gradient descent
+[46:34] step is small compared to the to the
+[46:37] width
+[46:40] and also so in practice this is kind of
+[46:43] associated with memor memorization
+[46:46] and uh you know the feature learning is
+[46:48] more associated with generalization.
+[46:52] Okay. So uh so then we can just
+[46:54] explicitly solve uh this equation. So we
+[46:58] have uh we can write uh we can get rid
+[47:02] of the t's here,
+[47:04] right? So
+[47:10] yeah, sorry. Yes. So exactly we're
+[47:12] getting rid of the t. So we just have a
+[47:13] linear combination. So here a k is the
+[47:17] uh
+[47:19] l2
+[47:21] projection of uh f onto
+[47:25] of tk
+[47:28] onto uh
+[47:31] it's it's a projection of our map onto
+[47:33] the function onto into specific function
+[47:39] and so let's uh write down
+[47:43] basis
+[47:44] Yes. Yes. Yes. That follows from the
+[47:46] properties of self adjoint operators.
+[47:48] Now, uh we do need to assume that far
+[47:53] lies does not you know uh lies entirely
+[47:57] in the um uh in the complement of the uh
+[48:03] uh of the kernel of K.
+[48:14] Um
+[48:18] okay. Uh so let me define R K of T to be
+[48:24] the projection of GT
+[48:28] over FK in L2.
+[48:34] Uh yeah. So, so, so
+[48:38] let me erase that and just so, so what
+[48:40] exactly are we trying to solve? Well,
+[48:42] we're solving this specific very simple
+[48:44] problem. We're looking at uh dt
+[48:48] of g theta of t of x = 2 minus tg.
+[48:54] That's that's the OD that we want to
+[48:57] solve. Uh now we define r k of t to be
+[49:03] uh gtk
+[49:06] l2.
+[49:09] Uh so that can be written as you know
+[49:13] sum of uh
+[49:22] so so gt can be written as uh
+[49:30] sum of our case t
+[49:35] pk of x
+[49:40] And so all we need to do now is solve is
+[49:43] solve an OD for for RK
+[49:46] which is quite straightforward.
+[49:56] So the derivative of RK of T
+[50:00] is uh
+[50:03] can be written as the derivative of GT
+[50:08] effective PK
+[50:10] the L2 norm that
+[50:14] well now we can substitute minus T
+[50:20] uh GT
+[50:28] So that's now minus GT TK because of
+[50:33] self adjointness.
+[50:36] Now we know that FK is an igen function
+[50:40] of T. So we get uh minus lambda K
+[50:49] gt.
+[50:52] K
+[50:53] 2 and that's just minus lambda K R K
+[50:59] 2
+[51:04] that look okay.
+[51:07] So we get a assuming that the uh kernel
+[51:10] is frozen. we get the simple OD
+[51:14] uh whose solution is now uh R K of T is
+[51:20] the value of RK at 0 time E to the
+[51:24] lambda KT
+[51:35] and okay so let's assume
+[51:39] uh that uh Our
+[51:43] f at point zero
+[51:46] f of zero of x was just zero just a zero
+[51:50] function assume we start uh learning
+[51:52] from the zero function uh for simplicity
+[51:55] then uh we have that uh r k of t is
+[52:02] equal to uh minus a k it's the
+[52:06] coefficient of far e to the negative
+[52:09] lambda kt So we are you know
+[52:12] exponentially approaching the correct uh
+[52:18] uh function the correct the correct
+[52:21] component in the projection onto the uh
+[52:25] space of of k. And so we can write down
+[52:29] uh an expression for
+[52:32] or g t
+[52:38] minus
+[52:41] sorry I hard to measure manage the board
+[52:44] here minus summation k a k uh e to the
+[52:50] minus lambda kt
+[52:54] dk Okay.
+[52:56] Okay. And then f of t ft the actual
+[53:00] network that we've learned is uh a k * 1
+[53:05] - uh e minus lambda k
+[53:11] tk
+[53:17] questions here.
+[53:23] >> Okay. So let me just write down what we
+[53:26] get from this. Uh
+[53:29] let me erase
+[53:30] >> yeah this a zero function then there
+[53:33] should be one term the
+[53:36] space.
+[53:38] So
+[53:38] >> yes
+[53:39] >> it's a zero function.
+[53:41] So for example like one is a1 is con
+[53:49] >> if if we start from from the zero
+[53:51] function in the beginning.
+[53:52] >> Yeah. But but our loss is zero minus f
+[53:55] star
+[53:57] right so our loss is um so our loss then
+[54:00] in the beginning will be just the l2
+[54:02] norm of far
+[54:07] uh so so then
+[54:10] here's a a proposition that's not hard
+[54:12] to uh
+[54:16] to uh to get from from this is that uh
+[54:19] so claim Okay.
+[54:24] Was satisfies
+[54:30] L of F theta of T. Uh
+[54:39] okay. So I I forgot to put down the
+[54:42] assumptions. So suppose
+[54:46] we have information about how values
+[54:49] decay
+[54:51] and how the uh aks decay. So if uh
+[54:57] lambda k decays like k to the minus
+[55:01] alpha
+[55:03] and uh a k squared
+[55:07] uh decays like uh k ^ minus1 minus alpha
+[55:12] beta
+[55:14] then
+[55:16] we have a simple power law or scaling
+[55:20] law for for loss it's going to decay
+[55:23] like t the R minus beta is training
+[55:26] time.
+[55:42] And so the proof idea
+[55:47] is just to break the IGEN functions into
+[55:50] two groups depending on how large the
+[55:53] IGEN values are. Uh right. So, so let's
+[55:57] uh so let's take this cut of m to be the
+[56:03] uh the integer part + 1 of t ^ 1 / alpha
+[56:09] and then consider
+[56:13] uh values of k that are larger compared
+[56:17] to m and uh values of k that are small
+[56:22] compared to m. And what what you'll see
+[56:26] is that you know for large for values
+[56:28] that are large compared to m uh this uh
+[56:34] this term is so so this term is going to
+[56:38] be bounded away from zero. It's not uh
+[56:42] so you're not going to learn this uh
+[56:45] those functions. you're not going to
+[56:47] learn these modes. But for smaller than
+[56:49] m, you will learn those modes and then
+[56:51] you can separately understand what the
+[56:54] loss looks like for for the uh functions
+[56:57] where you're close to uh uh to to the
+[57:01] correct function and for those where
+[57:03] you're far away to the correct function
+[57:05] and this will give you a particular uh
+[57:08] scaling block. Yeah,
+[57:11] >> there different way to see that it will
+[57:13] not depend on alpha but in rescaling
+[57:15] that makes it dependent on that.
+[57:18] >> Yes. So they are kind of tied here,
+[57:21] right? So so so the uh so you have a
+[57:24] rate rate of decay for functions for
+[57:28] values and for uh uh
+[57:32] you know for the projections of the
+[57:34] target that you learned. You kind of
+[57:36] need both in order to determine what the
+[57:39] uh what the decay looks like. But does
+[57:42] that answer your question?
+[57:44] >> Not really.
+[57:44] >> Not really. Okay. Sure. Yeah.
+[57:46] >> Okay. So, next week uh we will have uh a
+[57:50] guest lecture by Anson Hur on Wednesday
+[57:53] uh about epoch's work on uh modeling
+[57:56] capabilities.
+[57:57] Please give me your uh feedback. We can
+[58:01] do you know various styles of directions
+[58:03] various styles of I'm experimenting a
+[58:05] little bit. So today I tried blackboard
+[58:07] talk not sure how that went
+[58:11] if it was very useful for you or if more
+[58:13] you know slides talks are are um
+[58:16] interesting and we will talk a little
+[58:18] bit more about various theories of deep
+[58:20] learning and then later we will talk
+[58:22] about we will move into mechanistic
+[58:24] interpretability and geometry of
+[58:26] activations
+[58:27] that's that's
