@@ -9,3 +9,4 @@ Add lecture notes, readings, and timestamped transcripts here as the course prog
 - [A Mathematical Framework for Transformer Circuits](https://transformer-circuits.pub/2021/framework/index.html) — mechanistic interpretability foundations.
 - [Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html) — large-scale feature extraction and analysis.
 - [Sky sphere representation in language models](https://arxiv.org/abs/2607.27092) — preprint by Yevgeny Liokumovich and A. Berdnikov, listed on the instructor's page.
+- [Golden Gate Claude](https://www.anthropic.com/news/golden-gate-claude) — an Anthropic research demo that amplified a Golden Gate Bridge feature in Claude 3 Sonnet; the demo was available for 24 hours.

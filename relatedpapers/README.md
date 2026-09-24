@@ -13,6 +13,8 @@ An annotated reading list of papers related to the course topics. These are link
 - [Towards Monosemanticity: Decomposing Language Models With Dictionary Learning](https://transformer-circuits.pub/2023/monosemantic-features/index.html) — sparse feature decomposition in language models.
 - [A Mathematical Framework for Transformer Circuits](https://transformer-circuits.pub/2021/framework/index.html) — foundations for mechanistic interpretability.
 - [Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet](https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html) — large-scale feature extraction and analysis.
+- [Golden Gate Claude](https://www.anthropic.com/news/golden-gate-claude) — Anthropic's 24-hour research demo of steering Claude 3 Sonnet by amplifying an interpretable Golden Gate Bridge feature; a control example, not a formal safety proof.
+- [Evaluating feature steering: A case study in mitigating social biases](https://www.anthropic.com/research/evaluating-feature-steering) — evaluates potential benefits and limitations of steering features in Claude 3 Sonnet.
 
 ## Multi-agent interaction
 
