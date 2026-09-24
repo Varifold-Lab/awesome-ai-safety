@@ -15,8 +15,8 @@ Planned topics include AI capability forecasting, deep learning theory, LLM trai
 
 ## Repository contents
 
-- [Course notes](notes/README.md): lecture, discussion, and reading notes.
-- [Transcripts](transcripts/README.md): searchable transcripts for the first four lectures.
+- [Lectures](Lectures/README.md): materials organized by the course's weekly topics.
+- [Course notes](notes/README.md): cross-topic discussion and reading notes.
 - [Project ideas](projects/README.md): early ideas and evolving project plans.
 
 Use the templates in those folders as a starting point. Suggested filenames follow `YYYY-MM-DD-topic.md` for dated notes and short descriptive names for project ideas.
