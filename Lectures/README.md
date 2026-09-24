@@ -18,3 +18,7 @@ Lecture materials are grouped by the weekly topics in the [Fields Institute cour
 | 12 | Project presentations | [Project presentations](Week%2012/01%20-%20Project%20presentations/README.md) |
 
 The first four recordings are filed by topic: Lectures 01–02 cover capability trajectories, Lecture 03 covers deep learning theory, and Lecture 04 covers AI R&D automation and feedback loops. Lecture 04 took place on September 23, but is grouped with Week 01 because of its content.
+
+## Reading and research resources
+
+Start with the [course-wide resource index](Resources.md) for the Fields Institute's suggested readings, related courses, the instructor's AI safety papers, and research organizations. Each weekly topic folder also has a short, topic-specific reading list.

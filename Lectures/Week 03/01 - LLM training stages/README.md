@@ -6,3 +6,9 @@ Planned topics from the course outline:
 - Reward modeling, RLHF, RLAIF, direct preference optimization, and reinforcement learning for reasoning.
 
 Add lecture notes, readings, and timestamped transcripts here as the course progresses.
+
+## Further reading
+
+- [AI Safety (CS 2881), Fall 2026](https://boazbk.github.io/mltheoryseminar/) — includes lectures on modern LLM training and RL post-training.
+- [Introduction to AI Safety, Ethics, and Society](https://www.aisafetybook.com/) — introductory background on current AI systems and safety.
+- [ILIAD Intensive Curriculum](https://www.iliad.ac/intensive) — broader alignment curriculum for placing training choices in context.
