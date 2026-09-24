@@ -11,6 +11,7 @@ Add lecture notes, readings, and timestamped transcripts here as the course prog
 - [Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks](https://arxiv.org/abs/1702.01135) — an early example of formal verification for neural networks.
 - [AI Safety for Mathematicians](https://mathforaisafety.org/) — mathematical background and research context.
 - [Fields–PrincInt postdoctoral research directions](https://www.mathjobs.org/jobs/FIELDS/PDFAI) — includes formal verification methods for AI safety.
+- [Chapter 3.3: Robustness](https://www.aisafetybook.com/textbook/robustness) and [Chapter 4: Safety Engineering](https://www.aisafetybook.com/textbook/safety-engineering) — supplementary context on robustness, risk analysis, and safety engineering.
 
 ## Related case study: feature steering
 

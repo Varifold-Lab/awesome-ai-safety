@@ -5,7 +5,7 @@ This index collects resources linked from the [Fields Institute course page](htt
 ## Suggested starting points
 
 - [ILIAD Intensive Curriculum](https://www.iliad.ac/intensive) — the course's suggested curriculum for foundational AI alignment research.
-- [Introduction to AI Safety, Ethics, and Society](https://www.aisafetybook.com/) by Dan Hendrycks — the course's suggested introductory text.
+- [Introduction to AI Safety, Ethics, and Society](https://www.aisafetybook.com/) by Dan Hendrycks — the course's suggested introductory text. The chapters are readable online, and the site links to a downloadable PDF; the book itself is not stored in this repository.
 - [AI Safety for Mathematicians](https://mathforaisafety.org/) — mathematical introduction to the field, maintained by Jacob Tsimerman.
 - [Fields course lecture recordings](https://www.youtube.com/playlist?list=PLZhkBbRD_dJM) — recordings for this course.
 - [AI Safety for Mathematicians video](https://www.youtube.com/watch?v=Zn1H0bwB9y4) — linked from the instructor's page.

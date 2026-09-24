@@ -10,5 +10,5 @@ Add lecture notes, readings, and timestamped transcripts here as the course prog
 ## Further reading
 
 - [AI Safety (CS 2881), Fall 2026](https://boazbk.github.io/mltheoryseminar/) — includes lectures on modern LLM training and RL post-training.
-- [Introduction to AI Safety, Ethics, and Society](https://www.aisafetybook.com/) — introductory background on current AI systems and safety.
+- [Appendix C: Reinforcement Learning](https://www.aisafetybook.com/textbook/appendix-reinforcement-learning) — introductory RL concepts relevant to post-training.
 - [ILIAD Intensive Curriculum](https://www.iliad.ac/intensive) — broader alignment curriculum for placing training choices in context.

@@ -8,4 +8,5 @@ Add lecture notes, readings, and timestamped transcripts here as the course prog
 
 - [Quantifying stability of non-power-seeking in artificial agents](https://arxiv.org/abs/2401.03529) — preprint by Yevgeny Liokumovich, E. R. Gunter, and V. Krakovna, listed on the instructor's page.
 - [The Off-Switch Game](https://arxiv.org/abs/1510.08187) — a decision-theoretic model of corrigibility and shutdown incentives.
+- [Appendix B: Utility Functions](https://www.aisafetybook.com/textbook/appendix-utility-functions) — background on utility representations.
 - [Mathematics for AI Safety](https://lionellevine.github.io/MAIS.html) — lecture notes with additional references on incentives and agency.

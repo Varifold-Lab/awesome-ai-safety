@@ -6,6 +6,6 @@ Add lecture notes, readings, and timestamped transcripts here as the course prog
 
 ## Further reading
 
-- [Introduction to AI Safety, Ethics, and Society](https://www.aisafetybook.com/) — introductory material on adversarial robustness and safety.
+- [Chapter 3.3: Robustness](https://www.aisafetybook.com/textbook/robustness) — textbook chapter on adversarial examples, Trojans, and robustness challenges.
 - [AI Safety (CS 2881), Fall 2026](https://boazbk.github.io/mltheoryseminar/) — includes material on model policies and safety.
 - [AI Safety for Mathematicians](https://mathforaisafety.org/) — mathematical and research context for technical safety work.
