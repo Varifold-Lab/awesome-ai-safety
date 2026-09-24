@@ -26,6 +26,7 @@ An annotated reading list of papers related to the course topics. These are link
 
 ## Safety guarantees
 
+- [TorchLean: Formalizing Neural Networks in Lean](https://arxiv.org/abs/2602.22631) — a Lean 4 framework for neural-network specification, execution, and verification; demonstrated on certified robustness, PINN residual bounds, and neural-controller verification. See the [TorchLean project](https://github.com/lean-dojo/TorchLean) and its [verification overview](https://torchlean.org/docs/verification/overview) for implementation details and trust boundaries.
 - [Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks](https://arxiv.org/abs/1702.01135) — an early example of formal verification for neural networks.
 
 ## Agency and decision theory
