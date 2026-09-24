@@ -16,10 +16,9 @@ This index collects resources linked from the [Fields Institute course page](htt
 - [AI Safety (CS 2881), Fall 2026](https://boazbk.github.io/mltheoryseminar/), Boaz Barak, Harvard University — lectures on capabilities, training, interpretability, and alignment.
 - [AI Alignment](https://alignment-w2024.notion.site/), Roger Grosse, University of Toronto — linked from the Fields page; the page may require Notion access.
 
-## Instructor's AI safety papers
+## Related Safety Papers
 
-- [Sky sphere representation in language models](https://arxiv.org/abs/2607.27092), Yevgeny Liokumovich and A. Berdnikov (2026 preprint) — geometric representations in language models; relevant to Weeks 05–06.
-- [Quantifying stability of non-power-seeking in artificial agents](https://arxiv.org/abs/2401.03529), Evan Ryan Gunter, Yevgeny Liokumovich, and Victoria Krakovna (2024 preprint) — studies when non-shutdown-avoiding behavior remains stable under changes in an environment; relevant to Week 10.
+See the independent [relatedpapers folder](../relatedpapers/README.md) for an annotated list of papers, grouped by course topic.
 
 ## Research and community organizations
 
