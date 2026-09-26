@@ -4,7 +4,7 @@ The course outline includes learning theory, SGD versus Bayesian approaches, gen
 
 ## Recording
 
-- [Lecture 03 — How Neural Networks Learn](Lecture%2003%20-%20How%20neural%20networks%20learn.md) · [original captions](Lecture%2003%20-%20Mathematics%20for%20AI%20Safety.en.txt)
+- [Lecture 03 — How Neural Networks Learn](Lecture%2003%20-%20How%20neural%20networks%20learn.md)
 
 The English text is YouTube's auto-translation of auto-generated Arabic captions. Verify wording and technical terms against the recording.
 

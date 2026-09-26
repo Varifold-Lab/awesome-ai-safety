@@ -17,7 +17,7 @@ Lecture materials are grouped by the weekly topics in the [Fields Institute cour
 | 11 | Project presentations | [Project presentations](Week%2011/01%20-%20Project%20presentations/README.md) |
 | 12 | Project presentations | [Project presentations](Week%2012/01%20-%20Project%20presentations/README.md) |
 
-The first four recordings are filed by topic: Lectures 01–02 cover capability trajectories, Lecture 03 covers deep learning theory, and Lecture 04 covers AI R&D automation and feedback loops. Their topic folders link to readable, cited Markdown companions and the original caption text. Lecture 04 took place on September 23, but is grouped with Week 01 because of its content.
+The first four recordings are filed by topic: Lectures 01–02 cover capability trajectories, Lecture 03 covers deep learning theory, and Lecture 04 covers AI R&D automation and feedback loops. Their topic folders link to readable, cited Markdown companions . Lecture 04 took place on September 23, but is grouped with Week 01 because of its content.
 
 ## Reading and research resources
 
