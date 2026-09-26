@@ -5,6 +5,23 @@ An annotated reading list of papers related to the course topics. These are link
 ## Capabilities and scaling
 
 - [Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361) — studies empirical scaling relationships between model size, data, compute, and language-model loss.
+- [Training Compute-Optimal Large Language Models (Chinchilla)](https://arxiv.org/abs/2203.15556) — shows that compute-optimal language-model training requires scaling training tokens along with model size. Discussed alongside Kaplan et al. in Lectures 02 and 03.
+- [Forecasting time to automated superhuman coders (AI 2027 Timelines Forecast)](https://ai-2027.com/research/timelines-forecast) — April 2025 forecast of timelines for superhuman AI coders, including the 30-times-as-many, 30-times-faster researcher milestone discussed in Lecture 01 around 1:08.
+- [Takeoff Forecast (AI 2027)](https://ai-2027.com/research/takeoff-forecast) — companion April 2025 forecast discussed in Lecture 01's discussion of AI research speedups.
+- [ExploitGym: Can AI Agents Turn Security Vulnerabilities into Real Attacks?](https://arxiv.org/abs/2605.11086) — the benchmark paper apparently referenced in Lecture 01 around 27:28 when discussing scoring and flag validation. The caption does not name the paper; identification is based on the incident and benchmark context, so verify against the recording.
+
+## Generalization and learning theory
+
+- [Understanding Deep Learning Requires Rethinking Generalization](https://arxiv.org/abs/1611.03530) — Zhang et al. (2017); demonstrates that neural networks can fit randomized labels, challenging classical intuitions about generalization. Discussed in Lecture 03 around 1:03:38.
+- [Deep Learning is Not So Mysterious or Different](https://arxiv.org/abs/2503.02113) — Andrew Gordon Wilson (2025); develops an account of deep learning in terms of soft inductive biases. This appears to be the “soft inductive bias” reading mentioned near the end of Lecture 03.
+
+## AI risk and development trajectories
+
+- [Gradual Disempowerment: Systemic Existential Risks from Incremental AI Development](https://arxiv.org/abs/2501.16946) — Jan Kulveit, Raymond Douglas, Nora Ammann, Deger Turan, David Krueger, and David Duvenaud (2025); analyzes how competitive pressures during incremental AI development could reduce human influence. Mentioned in Lecture 01 around 56:03 and shown on the slide in the provided screenshot.
+
+## References needing identification
+
+- Lecture 03 around 41:35 describes a recent paper measuring the neural tangent kernel spectrum during training and tracking learned eigenfunctions. The auto-caption does not preserve the title or authors, and I could not identify it confidently; add once the slide or recording reference is checked.
 
 ## Representations and interpretability
 
