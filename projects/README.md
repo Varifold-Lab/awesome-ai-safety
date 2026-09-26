@@ -6,3 +6,4 @@ The [weekly research seeds](Weekly%20Research%20Seeds.md) offer small, expandabl
 
 | Idea | Status | Notes |
 | --- | --- | --- |
+| [Certified Local Effects of Activation Steering](certified-activation-steering.md) | Draft proposal | A small-network study connecting steering, representation geometry, and local verification. |
