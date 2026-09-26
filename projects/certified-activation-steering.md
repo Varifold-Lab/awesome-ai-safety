@@ -4,13 +4,17 @@
 **Working title:** Certified Local Effects of Activation Steering in Small Neural Networks  
 **Course connections:** Week 2 (deep learning theory), Week 5 (representation geometry), Week 6 (interpretability and steering), and Week 9 (safety guarantees)
 
+## Abstract (proposal draft)
+
+Activation steering changes a neural network's behavior by adding a vector to an internal representation, but an observed target effect does not establish that other outputs remain stable. We propose a Lean 4 study of selective steering in small networks with two output heads. Using TorchLean to represent the network and intervention, we will state a local property over an explicit input region: the intervention changes a target prediction while preserving a guard prediction. We will first analyze the geometry of this property within fixed ReLU activation regions, then construct concrete examples and counterexamples near region boundaries. We will attempt to check the resulting bounds or prove the property in Lean under stated model and arithmetic assumptions. Comparisons with unconstrained and random steering directions will show when selectivity is possible and when it fails. The intended result is a precise account of local steering guarantees and their trust boundaries, rather than a claim about unrestricted language-model safety.
+
 ## One-sentence summary
 
 Study when an intervention on a network's hidden activations can change a chosen output while preserving another output, and give checkable guarantees over a bounded set of inputs.
 
 ## Research question
 
-Suppose a trained network represents two simple attributes. We add a vector to an intermediate activation to change the prediction for one attribute. **Under what conditions can we guarantee that the intended prediction changes and the other prediction remains correct for every input in a specified region?**
+Suppose a small network represents two simple attributes. We add a vector to an intermediate activation to change the prediction for one attribute. **Under what conditions can we guarantee that the intended prediction changes and the other prediction remains correct for every input in a specified region?**
 
 The first answer will concern a small ReLU network and a local input region. Any later experiment with a language model will be exploratory; the local network guarantee will not be described as a guarantee about free-form language behavior.
 
@@ -42,15 +46,15 @@ Here $\delta_0,\delta_1>0$ are target margins chosen before testing. The first t
 
 ## Minimal study
 
-1. **Construct a controlled task.** Generate two balanced binary attributes from a low-dimensional input. Train a small shared ReLU network with two output heads. Put the steering intervention before at least one later nonlinear layer, so activation-region changes can matter.
-2. **Choose steering directions.** Start with a difference-of-means direction from held-out examples of the target attribute. Compare it with a random direction and a direction chosen without a guard constraint. Keep the model, direction, strength, and evaluation sets separate to avoid selecting a direction on the test examples.
-3. **Measure effects.** Across several strengths, report target success, guard accuracy, and the fraction of test points showing an unwanted guard change. Include examples where steering succeeds and where it fails.
-4. **Certify small regions.** For selected held-out inputs, attempt to bound both margins over input boxes. Report the largest radius certified for the joint property, and compare that with adversarial search for counterexamples. A failed certificate is marked **inconclusive** unless a counterexample is found.
-5. **Explain the geometry.** In a region with a fixed ReLU activation pattern, derive how the two output margins depend on the steering direction. Test whether useful directions align with the target margin while having a small effect on the guard margin. Examine what changes when the intervention crosses a ReLU boundary.
+1. **Construct a controlled task.** Define two binary attributes over a low-dimensional input and a small shared ReLU network with two output heads in Lean 4/TorchLean. Begin with explicit rational weights. Put the steering intervention before at least one later nonlinear layer, so activation-region changes can matter.
+2. **Choose steering directions.** Compare a direction designed to change the target head while preserving the guard head with a random direction and a direction chosen without a guard constraint. A later experiment can derive a direction from separate development examples.
+3. **Measure effects.** Across several strengths, evaluate target success and unwanted guard changes on a finite test set. Keep these observations separate from the universal property over an input box.
+4. **Certify small regions.** For selected inputs, bound both margins over explicit input boxes using a TorchLean verification workflow. Check whether the bound is supported by a soundness theorem or a checked certificate for the exact model semantics. Report the largest radius actually certified; mark unsuccessful bound attempts **inconclusive** unless a counterexample is found.
+5. **Explain the geometry.** In a region with a fixed ReLU activation pattern, prove how the two output margins depend on the steering direction. Construct a case where the intervention crosses a ReLU boundary and the fixed-region argument no longer applies.
 
-The first version can be completed with synthetic data and a small network on a laptop. One additional public dataset or a small open model is an optional extension after the controlled case works.
+The first version can be completed with a small network and exact coefficients in Lean 4. A trained network, public dataset, or small open model is an optional extension after the controlled case works.
 
-**Minimum viable result:** One two-head network, one useful steering direction, one nonzero input box for which the joint property is proved or soundly checked, and a comparison with a random direction. A full language-model experiment and a Lean formalization are extensions, not prerequisites for the pilot.
+**Minimum viable result:** One two-head network, one useful steering direction, and one nonzero input box for which the joint property is proved or soundly checked in Lean 4, together with a contrasting direction or counterexample. A full language-model experiment is outside the pilot scope.
 
 ## Proposed research contribution
 
@@ -66,30 +70,30 @@ The contribution will be evaluated against the existing steering and neural-netw
 
 | Need | Minimal choice | Purpose |
 | --- | --- | --- |
-| Model and experiments | Python, PyTorch, synthetic two-attribute data | Train a small network and apply steering vectors. |
-| Verification baseline | Interval bounds or exact enumeration of activation regions for a tiny network | Check local output properties and distinguish proof from failed search. |
-| Proof checking | Lean 4 and [TorchLean](https://arxiv.org/abs/2602.22631), if its supported semantics and checker match the experiment | Explore a machine-checkable result after the mathematical property is stable. |
+| Model and steering | Lean 4 and [TorchLean](https://arxiv.org/abs/2602.22631) | Define and evaluate the small network and hidden-state intervention in one Lean-based environment. |
+| Verification | TorchLean's supported bound and certificate workflows; Lean proofs for the fixed-region argument | Check local output properties and distinguish proof from failed search. |
+| Optional experiment | Synthetic data and Python/PyTorch if useful for plots or a trained-weight extension | Compare steering directions beyond the first exact-weight examples. |
 | Research context | The [course outline](https://www.fields.utoronto.ca/activities/26-27/SGC-safety), [Golden Gate Claude](https://www.anthropic.com/news/golden-gate-claude), [steering side-effect study](https://arxiv.org/abs/2608.11227), and [TorchLean verification documentation](https://lean-dojo.github.io/TorchLean/examples/verification/) | Define the gap and document the tool's trust boundary. |
 
 TorchLean's examples distinguish candidate output bounds from a theorem about the network's semantics. The proposal will use the word **certified** only when the required soundness argument or checked theorem covers the actual model, graph, weights, arithmetic, input region, and predicate.
 
-The pilot needs basic linear algebra, PyTorch, and the ability to inspect a small verification procedure. CPU training should be sufficient for the synthetic task; no paid model API or private dataset is required. Lean experience would be useful for the later formalization stage.
+The pilot needs basic linear algebra, Lean 4, and familiarity with TorchLean's model and verification interfaces. It does not require a paid model API, private dataset, or large training run.
 
 ## Work plan and decision points
 
 | Stage | Goal | Decision point |
 | --- | --- | --- |
-| Early course | Read the core papers; implement the two-attribute task and establish baseline accuracy. | Can the model learn both attributes reliably? |
-| Representation and interpretability weeks | Construct steering vectors, measure target and guard effects, and test the fixed-region geometric prediction. | Is there a nontrivial target/guard trade-off to explain? |
+| Early course | Read the core papers; encode a two-head ReLU network and steering operation in Lean 4/TorchLean. | Are the network and intervention represented with explicit semantics? |
+| Representation and interpretability weeks | Construct steering directions and prove a fixed-activation-region lemma. | Is there a nontrivial target/guard trade-off to explain? |
 | Safety-guarantees week | Prove or check the joint local property for small input boxes; search for counterexamples outside them. | Can any nonzero input radius be certified under explicit soundness assumptions? |
-| Final project | Write the theorem or counterexample, report the experimental comparison, and release a reproducible example. | Does the result add something beyond existing side-effect measurements and standard verification examples? |
+| Final project | Present the Lean theorem or checked certificate, a counterexample or comparison, and a reproducible example. | Does the result add something beyond existing side-effect measurements and standard verification examples? |
 
 If steering has no useful range in the first task, simplify the data or network and explain why. If interval bounds cannot certify a property that empirical search suggests is true, compare tighter bounds or exact enumeration on an even smaller network. These outcomes can still identify a meaningful limitation of the method.
 
 ## Expected deliverables
 
 - A concise report with the formal property, literature comparison, method, results, and limitations.
-- Reproducible code, model weights, generated data, and a fixed list of evaluation inputs.
+- Reproducible Lean code, exact model weights, intervention parameters, and a fixed list of evaluation inputs.
 - At least one certified example or an explicit counterexample, with a clear distinction between the two.
 - A short presentation suitable for the course's project weeks.
 
