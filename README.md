@@ -2,6 +2,8 @@
 
 This repository is for preparing for and following the Fields Institute course [Mathematics for AI Safety](https://www.fields.utoronto.ca/activities/26-27/SGC-safety). It will collect course notes, useful resources, and project ideas as they develop.
 
+**[Read the course documentation](https://varifold-lab.github.io/awesome-ai-safety/)** · A learning project of [Varifold Lab](https://varifold-lab.github.io/).
+
 ## Course information
 
 - **Dates:** September 14–December 9, 2026; mid-semester break is October 12–16.

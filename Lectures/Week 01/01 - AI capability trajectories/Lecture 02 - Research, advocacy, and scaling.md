@@ -2,6 +2,71 @@
 
 *A readable companion to [Lecture 02](https://www.youtube.com/watch?v=-XmDvvHqfLI). Edited from YouTube's auto-generated English captions; it is not a verbatim transcript. Timestamps link to the recording.*
 
+## Mathematical setup: language models and loss
+
+This study note expands slides 7–8, starting around [11:57 in the recording](https://www.youtube.com/watch?v=-XmDvvHqfLI&t=717s). It explains the notation used before the scaling-law discussion.
+
+### A language model is a conditional distribution
+
+Tokenization encodes text as a sequence of elements of a finite vocabulary $V$. A token can be a word, part of a word, or punctuation. Given the preceding tokens (the context $c$), a model with parameters $\theta\in\mathbb{R}^N$ produces
+
+$$
+p_\theta(\cdot\mid c)\in\Delta(V),\qquad
+\Delta(V)=\left\{q:V\to[0,1]\;\middle|\;\sum_{v\in V}q(v)=1\right\}.
+$$
+
+Here $N$ counts model parameters; $|V|$ counts possible next tokens. They are different quantities. The dot in $p_\theta(\cdot\mid c)$ leaves the token argument open, so the expression denotes a whole distribution. Filling in a token gives a number: for the context “The capital of France is”, the slide uses the illustrative value $p_\theta(\text{Paris}\mid c)=0.6$, assuming Paris is one token.
+
+During training, the parameters change. During generation, the model selects a next token, appends it to the context, and repeats. Sampling from the distribution is the generation rule described on the slide.
+
+### The observed next token is the training target
+
+A dataset of prediction positions is written
+
+$$
+S=\{(c_i,y_i)\}_{i=1}^m.
+$$
+
+The target $y_i$ is the next token actually present in the text after context $c_i$, not a token sampled from the model. The average negative log-likelihood is
+
+$$
+L_S(\theta)=-\frac{1}{m}\sum_{i=1}^{m}\log p_\theta(y_i\mid c_i).
+$$
+
+The logarithm is natural, so the loss is measured in nats per token. A model is penalized for assigning low probability to what actually occurred:
+
+| Probability assigned to the observed token | Negative log-likelihood |
+| --- | --- |
+| $0.9$ | $0.105$ |
+| $0.6$ | $0.511$ |
+| $0.01$ | $4.605$ |
+
+### Why logarithms and cross-entropy appear
+
+For a token sequence with its preceding tokens as context, the chain rule gives
+
+$$
+p_\theta(y_1,\ldots,y_m)=\prod_{i=1}^{m}p_\theta(y_i\mid y_1,\ldots,y_{i-1}).
+$$
+
+Taking a logarithm turns this product into a sum. Minimizing its negative therefore maximizes the sequence likelihood; dividing by $m$ expresses the result per token. No independence assumption between successive tokens is needed for this chain-rule factorization.
+
+At a particular prediction position, write the observed target as a one-hot distribution $q_i(v)=\mathbf{1}\{v=y_i\}$. Its cross-entropy with the model distribution is
+
+$$
+H(q_i,p_\theta(\cdot\mid c_i))
+=-\sum_{v\in V}q_i(v)\log p_\theta(v\mid c_i)
+=-\log p_\theta(y_i\mid c_i).
+$$
+
+This explains why the slide also calls the average loss *cross-entropy*. A one-hot training target records the observed token; it does not assert that the underlying language distribution has only one possible continuation.
+
+### From prediction loss to scaling laws
+
+Training approximately minimizes loss on the training text. Evaluation measures the same quantity on held-out text that was excluded from training. Lower test loss means better average probabilistic prediction on that text; it does not by itself establish safety or improved performance on every downstream task.
+
+This supplies the response variable for the next part of the lecture: how does held-out loss change as model size $N$, training tokens $D$, and training compute $C$ grow?
+
 ## Why both research and action matter
 
 The lecture opens by revisiting a question from the previous session: should people focus on policy and advocacy, or on technical AI safety research? The speaker uses the history of the Manhattan Project as an analogy. When scientists faced a potentially catastrophic physical risk, they could make a calculation using an established theory. AI researchers face a different problem: we do not yet have a sufficiently complete theory of intelligence or neural networks to calculate many long-term risks with comparable confidence.
