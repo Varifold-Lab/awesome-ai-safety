@@ -12,7 +12,7 @@ const summaries: Record<number, string> = {
 export default function Home() {
   return <Shell headings={[{ id: 'lectures', title: 'Lecture companions', level: 2 }, { id: 'study', title: 'Study & research', level: 2 }]}>
     <article className="prose home">
-      <p className="eyebrow">VARIFOLD LAB / LEARNING</p>
+      <p className="eyebrow">VARIFOLD / LEARNING</p>
       <h1>Mathematics<br />for AI Safety</h1>
       <p className="lead">A working collection of lecture companions, mathematical notes, and research questions.</p>
       <div className="course-meta"><span>Fields Institute · Fall 2026</span><span>Instructor: Yevgeny Liokumovich</span></div>
