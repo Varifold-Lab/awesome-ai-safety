@@ -1,10 +1,8 @@
 # Research, Advocacy, and Scaling
 
-*A readable companion to [Lecture 02](https://www.youtube.com/watch?v=-XmDvvHqfLI). Edited from YouTube's auto-generated English captions; it is not a verbatim transcript. Timestamps link to the recording.*
+*A readable companion to [Lecture 02](https://www.youtube.com/watch?v=-XmDvvHqfLI). Edited from YouTube's auto-generated English captions; it is not a verbatim transcript.*
 
 ## Mathematical setup: language models and loss
-
-This study note expands slides 7–8, starting around [11:57 in the recording](https://www.youtube.com/watch?v=-XmDvvHqfLI&t=717s). It explains the notation used before the scaling-law discussion.
 
 ### A language model is a conditional distribution
 
@@ -77,7 +75,7 @@ The lecture does not present research and policy as competing choices. Regulatio
 
 The technical discussion turns to empirical scaling relationships: how language-model loss changes as model size, training data, and compute change. [Kaplan et al.'s scaling laws](https://arxiv.org/abs/2001.08361) describe a set of empirical regularities that helped shape expectations about how to allocate training compute. The lecture then contrasts those results with the later Chinchilla analysis, which emphasizes training on more tokens for a given model size.
 
-The practical lesson is that a model's parameter count alone does not determine its capability. Compute allocation between model size and data matters, and conclusions depend on the range of models and training runs used to fit the scaling relationship. The lecture discusses Kaplan around [recording](https://www.youtube.com/watch?v=-XmDvvHqfLI) and compares the Kaplan and Chinchilla results.
+The practical lesson is that a model's parameter count alone does not determine its capability. Compute allocation between model size and data matters, and conclusions depend on the range of models and training runs used to fit the scaling relationship.
 
 ## References
 
