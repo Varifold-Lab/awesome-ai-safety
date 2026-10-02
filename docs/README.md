@@ -6,13 +6,19 @@ The site follows LeanMFG's three-column reading layout and uses Next.js static e
 
 ## Content
 
+The public reading order follows concepts and prerequisites. `notes/Reading Guide.md` and `notes/reading/` supply the edited topic articles; `lib/content.ts` defines their navigation and suggested reading sequence. The home page offers entry points by reader goal and attributes the originating course with Fields Institute and YouTube links. Lecture numbering and chronology remain in the source archive linked from the homepage.
+
+The topic articles remove spoken fillers, repeated explanations, logistics, and course numbering while retaining definitions, calculations, examples, assumptions, and unresolved questions. Additional mathematical exposition states its assumptions and links to primary references. The original source Markdown is preserved. In source pages, `build-content.mjs` puts the complete text after `Full lecture text` inside a closed native disclosure; it remains in the exported HTML and search index. The section anchor stays outside the disclosure for table-of-contents navigation.
+
+Search defaults to the edited content. The “Include source archive” checkbox also searches original captions, handouts, course indexes, and the original weekly research seeds.
+
 Edit the original Markdown in `Lectures/`, `notes/`, `projects/`, and `relatedpapers/`; the root `README.md` supplies the course-information page. Do not maintain a second copy inside `docs/`.
 
 Write notes around the concepts themselves. Keep ordinary source links, but do not add video playback timestamps, timestamped video links, or introductory narration about where a passage appears in a recording.
 
 `scripts/build-content.mjs` discovers all Markdown in those directories, converts it to HTML, rewrites relative Markdown links to website routes, and builds the search index and table of contents. Raw HTML in Markdown is not executed. Use `$…$` and `$$…$$` for mathematics. Templates are also readable on the website.
 
-Lecture filenames beginning with `Lecture NN -` receive stable `/docs/lectures/lecture-NN/` routes. Other routes follow their source paths. Adding a lecture automatically updates the home page, sidebar, search, and adjacent-lecture links. For changes to home-page summaries or top-level navigation, edit `app/page.tsx` or `lib/content.ts`.
+Lecture filenames beginning with `Lecture NN -` receive stable `/docs/lectures/lecture-NN/` routes. Other routes follow their source paths; topic articles use `/docs/reading/`. Adding a source updates search and adjacent-lecture links. For changes to the public reading path, home-page summaries, or top-level navigation, edit `app/page.tsx` or `lib/content.ts`.
 
 ## Development
 

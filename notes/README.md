@@ -1,6 +1,8 @@
-# Course Notes
+# Discussion Notes
 
-Use this folder for notes that span multiple course topics, such as reading notes or discussion takeaways. Put notes tied to a particular week or topic in the matching folder under [Lectures](../Lectures/README.md). Start with [TEMPLATE.md](TEMPLATE.md) and remove sections that do not apply.
+Start with the [reading guide](Reading%20Guide.md) for paths through the concepts, or browse [research directions](reading/Research%20directions.md) by subject and prerequisite knowledge.
+
+Use this folder for reading notes, open questions, or discussion takeaways. State the question, develop the reasoning, and connect it to the relevant topic or paper. Start with [TEMPLATE.md](TEMPLATE.md) and use the sections that apply.
 
 | Date | Topic | Notes |
 | --- | --- | --- |

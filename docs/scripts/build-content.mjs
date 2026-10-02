@@ -40,8 +40,10 @@ function routeFor(source) {
     'notes/README.md': '/docs/notes/',
     'projects/README.md': '/docs/projects/',
     'relatedpapers/README.md': '/docs/papers/',
+    'notes/Reading Guide.md': '/docs/reading/',
   }
   if (fixed[source]) return fixed[source]
+  if (source.startsWith('notes/reading/')) return `/docs/reading/${slugify(path.posix.basename(source, '.md'))}/`
   const lecture = path.posix.basename(source).match(/^Lecture (\d+) -/)
   if (lecture) return `/docs/lectures/lecture-${lecture[1]}/`
   return `/docs/${source.replace(/\.md$/, '').split('/').filter(part => part !== 'README').map(slugify).join('/')}/`
@@ -62,6 +64,21 @@ function rewriteLinks(source) {
   })
 }
 
+// Keep every source paragraph in the export while making the edited prose the default view.
+function collapseTranscript() {
+  return tree => {
+    const index = tree.children.findIndex(node => node.type === 'element' && node.tagName === 'h2'
+      && node.properties.id === 'full-lecture-text')
+    if (index < 0) return
+    tree.children[index].children = [{ type: 'text', value: 'Full source transcript' }]
+    const transcript = tree.children.splice(index + 1)
+    tree.children.push({ type: 'element', tagName: 'details', properties: { className: ['source-transcript'] }, children: [
+      { type: 'element', tagName: 'summary', properties: {}, children: [{ type: 'text', value: 'Read the complete transcript' }] },
+      ...transcript,
+    ] })
+  }
+}
+
 const pages = []
 for (const source of sources) {
   const markdown = await readFile(path.join(root, source), 'utf8')
@@ -72,6 +89,7 @@ for (const source of sources) {
   const headings = []
   const html = String(await unified().use(remarkParse).use(remarkGfm).use(remarkMath)
     .use(rewriteLinks(source)).use(remarkRehype).use(rehypeSlug)
+    .use(collapseTranscript)
     .use(() => tree => visit(tree, 'element', node => {
       if (['h2', 'h3'].includes(node.tagName)) headings.push({ id: node.properties.id, title: textOf(node), level: Number(node.tagName[1]) })
     }))
@@ -79,16 +97,18 @@ for (const source of sources) {
   if (html.includes('katex-error')) throw new Error(`Invalid math in ${source}`)
   const href = routes.get(source)
   const lecture = source.match(/\/Lecture (\d+) -/)
-  const section = source.startsWith('Lectures/') ? 'Lectures' : source.startsWith('notes/') ? 'Notes'
+  const archive = source === 'README.md' || source.startsWith('Lectures/') || source === 'projects/Weekly Research Seeds.md'
+  const section = source === 'notes/Reading Guide.md' || source.startsWith('notes/reading/') ? 'Reading guide'
+    : source === 'Lectures/Resources.md' ? 'Resources' : source.startsWith('Lectures/') ? 'Course archive' : source.startsWith('notes/') ? 'Notes'
     : source.startsWith('projects/') ? 'Research projects' : source.startsWith('relatedpapers/') ? 'Reading' : 'Course'
   pages.push({ title, description, href, slug: href.split('/').filter(Boolean).slice(1), source,
     sourceUrl: `${repository}/blob/main/${source.split('/').map(encodeURIComponent).join('/')}`,
-    html, headings, section, lecture: lecture ? Number(lecture[1]) : null,
+    html, headings, section, archive, lecture: lecture ? Number(lecture[1]) : null,
     text: tree.children.map(textOf).join(' ') })
 }
 
 const output = path.join(docs, '.generated')
 await mkdir(output, { recursive: true })
 await writeFile(path.join(output, 'pages.json'), JSON.stringify(pages, null, 2))
-await writeFile(path.join(output, 'search.json'), JSON.stringify(pages.map(({ title, description, href, text, section }) => ({ title, description, href, text, section }))))
+await writeFile(path.join(output, 'search.json'), JSON.stringify(pages.map(({ title, description, href, text, section, archive }) => ({ title, description, href, text, section, archive }))))
 console.log(`Prepared ${pages.length} Markdown pages with math, navigation, and search.`)

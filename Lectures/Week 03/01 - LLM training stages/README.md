@@ -5,7 +5,9 @@ Planned topics from the course outline:
 - Next-token pretraining, supervised fine-tuning, and instruction tuning.
 - Reward modeling, RLHF, RLAIF, direct preference optimization, and reinforcement learning for reasoning.
 
-Add lecture notes, readings, and transcripts here as the course progresses.
+## Lecture materials
+
+- [Lecture 05 — Final Project Directions](Lecture%2005%20-%20Final%20project%20directions.md) — September 28, 2026. The project handout reconstructed from screenshots, with an English text, an English overview, and reference links.
 
 ## Further reading
 

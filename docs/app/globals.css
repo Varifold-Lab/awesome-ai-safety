@@ -66,8 +66,36 @@ button { cursor: pointer; }
 .eyebrow { color: var(--accent); font: .75rem/1.6 var(--mono); letter-spacing: .1em; }
 .home h1 { font-size: clamp(2.6rem, 4.4vw, 3.7rem); margin-top: 1.2rem; }
 .home .lead { color: var(--muted); font-size: 1.15rem; line-height: 1.65; max-width: 37rem; }
+.course-attribution { color: var(--muted); font-size: .9375rem; max-width: 40rem; }
+.attribution-links { display: flex; flex-wrap: wrap; gap: .5rem 1.3rem; font-size: .875rem; padding-bottom: 1.2rem; border-bottom: 1px solid var(--line); }
+.prose .source-transcript { margin: 1.2rem 0 2rem; border: 1px solid var(--line); border-radius: 5px; padding: 1rem 1.2rem; }
+.source-transcript summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.source-transcript[open] summary { padding-bottom: 1rem; border-bottom: 1px solid var(--line); margin-bottom: 1.2rem; }
 .course-meta { display: flex; gap: .25rem 1.25rem; flex-wrap: wrap; color: var(--muted); font-size: .875rem; margin: 1.5rem 0 .5rem; }
 .intro-links { display: flex; gap: 1.4rem; font-size: .9375rem; }
+.intro-links { flex-wrap: wrap; }
+.entry-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
+.entry-grid a { border: 1px solid var(--line); padding: 1.1rem; border-radius: 5px; text-decoration: none; color: var(--ink); }
+.entry-grid a:hover { border-color: var(--accent); background: #f5f8fe; }
+.entry-grid strong, .entry-grid span { display: block; }
+.entry-grid strong { line-height: 1.5; }
+.entry-grid span { margin-top: .6rem; color: var(--muted); font-size: .875rem; line-height: 1.6; }
+.topic-list { border-top: 1px solid var(--line); margin: 1.5rem 0; }
+.topic-row { display: flex; align-items: center; gap: 1.5rem; padding: 1.2rem 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
+.topic-row strong, .topic-row span span, .topic-row small { display: block; }
+.topic-row:hover strong { color: var(--accent); }
+.topic-row span span { color: var(--muted); font-size: .9375rem; margin-top: .3rem; }
+.topic-row small { color: var(--muted); font-size: .8125rem; margin-top: .4rem; }
+.topic-arrow { margin-left: auto; color: var(--accent); flex-shrink: 0; }
+.reading-pagination { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 800px; margin: 3rem auto 0; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.reading-pagination a { display: block; text-decoration: none; }
+.reading-pagination span { display: block; color: var(--muted); font-size: .875rem; margin-bottom: .4rem; }
+.reading-pagination > :last-child { text-align: right; }
+.related-readings { max-width: 800px; margin: 3rem auto 0; padding-top: 1rem; border-top: 1px solid var(--line); }
+.related-readings h2 { font-size: 1rem; margin: 0 0 .8rem; }
+.related-readings a { display: block; margin: .4rem 0; }
+.source-order { max-width: 800px; margin: 1.5rem auto 0; color: var(--muted); font-size: .875rem; }
+.source-order summary { cursor: pointer; }
 .lecture-list { border-top: 1px solid var(--line); margin-top: 1.5rem; }
 .lecture-row { display: flex; align-items: center; gap: 1.3rem; padding: 1.3rem 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
 .lecture-row:hover strong { color: var(--accent); }
@@ -86,6 +114,8 @@ button { cursor: pointer; }
 .search-input-row { position: sticky; top: 0; display: flex; align-items: center; gap: .8rem; padding: 1rem; border-bottom: 1px solid var(--line); background: white; }
 .search-input-row input { min-width: 0; width: 100%; border: 0; padding: .35rem; font-size: 1rem; background: white; color: var(--ink); }
 .search-input-row button { border: 1px solid var(--line); border-radius: 4px; padding: .2rem .45rem; color: var(--muted); background: var(--surface); font-size: .875rem; }
+.search-sources { display: flex; align-items: center; gap: .5rem; padding: .65rem 1rem; font-size: .875rem; color: var(--muted); border-bottom: 1px solid var(--line); }
+.search-sources input { accent-color: var(--accent); }
 .search-results { padding: .5rem; }
 .search-results > p { margin: .8rem; font-size: .9375rem; color: var(--muted); }
 .search-results ul { list-style: none; padding: 0; margin: 0; }
@@ -112,6 +142,8 @@ button { cursor: pointer; }
   .prose h2 { font-size: 1.3rem; }
   .site-footer { padding: 1.2rem 22px; flex-wrap: wrap; }
   .study-grid { grid-template-columns: 1fr; }
+  .entry-grid { grid-template-columns: 1fr; }
+  .reading-pagination { gap: 1rem; font-size: .9375rem; }
 }
 @media (max-width: 420px) {
   .header-inner { padding: 10px 14px; }

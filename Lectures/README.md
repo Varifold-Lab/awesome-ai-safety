@@ -1,5 +1,19 @@
 # Lectures
 
+The [reading guide](../notes/Reading%20Guide.md) organizes the material by concepts, prerequisites, and research questions. This archive preserves the course sequence and source context.
+
+## Course sequence
+
+| Lecture | Date (2026) | Available material |
+| --- | --- | --- |
+| 01 | September 14 | [AI Capability Trajectories](Week%2001/01%20-%20AI%20capability%20trajectories/Lecture%2001%20-%20AI%20capability%20trajectories.md) |
+| 02 | September 16 | [Research, Advocacy, and Scaling](Week%2001/01%20-%20AI%20capability%20trajectories/Lecture%2002%20-%20Research%2C%20advocacy%2C%20and%20scaling.md) |
+| 03 | September 21 | [How Neural Networks Learn](Week%2002/01%20-%20Theory%20of%20Deep%20Learning/Lecture%2003%20-%20How%20neural%20networks%20learn.md) |
+| 04 | September 23 | [Software Intelligence Explosion](Week%2001/02%20-%20AI%20R%26D%20automation%20and%20feedback%20loops/Lecture%2004%20-%20Software%20intelligence%20explosion.md) |
+| 05 | September 28 | [Final Project Directions](Week%2003/01%20-%20LLM%20training%20stages/Lecture%2005%20-%20Final%20project%20directions.md) — project handout reconstructed from screenshots |
+
+## Weekly topic folders
+
 Lecture materials are grouped by the weekly topics in the [Fields Institute course outline](https://www.fields.utoronto.ca/activities/26-27/SGC-safety). Each week contains topic folders; place notes, readings, and transcripts in the relevant topic folder.
 
 | Week | Course topic | Topic folders |
@@ -17,7 +31,9 @@ Lecture materials are grouped by the weekly topics in the [Fields Institute cour
 | 11 | Project presentations | [Project presentations](Week%2011/01%20-%20Project%20presentations/README.md) |
 | 12 | Project presentations | [Project presentations](Week%2012/01%20-%20Project%20presentations/README.md) |
 
-The first four recordings are filed by topic: Lectures 01–02 cover capability trajectories, Lecture 03 covers deep learning theory, and Lecture 04 covers AI R&D automation and feedback loops. Their topic folders link to readable, cited Markdown companions . Lecture 04 took place on September 23, but is grouped with Week 01 because of its content.
+The first four recordings are filed by topic: Lectures 01–02 cover capability trajectories, Lecture 03 covers deep learning theory, and Lecture 04 covers AI R&D automation and feedback loops. Their topic folders link to readable, cited Markdown companions. Lecture 04 took place on September 23, but is grouped with Week 01 because of its content.
+
+[Lecture 05 — Final Project Directions](Week%2003/01%20-%20LLM%20training%20stages/Lecture%2005%20-%20Final%20project%20directions.md), held on September 28, is filed under Week 03. It reconstructs the project handout from screenshots, with the English text, an English overview of nine research directions, and reference links. It covers the project introduction rather than the complete lecture.
 
 ## Reading and research resources
 

@@ -1,8 +1,12 @@
 # Project Ideas
 
-Collect research and practice directions from the course here. Create one Markdown file per idea. It is fine to start with an incomplete question and refine it over time; use [TEMPLATE.md](TEMPLATE.md) as a starting point.
+The [research directions](../notes/reading/Research%20directions.md) group nine questions by subject and connect each to its conceptual background. The [reading guide](../notes/Reading%20Guide.md) provides paths through that background.
 
-The [weekly research seeds](Weekly%20Research%20Seeds.md) offer small, expandable exercises aligned with each course topic. They are starting points; students should check related work and refine a question before treating it as a novel research contribution.
+Create one Markdown file per idea. Begin with a precise question, state the assumptions, choose a baseline, and identify a result that could change the initial conclusion. Use [TEMPLATE.md](TEMPLATE.md) as a starting point and refine the proposal as evidence develops.
+
+The complete project handout and its administrative requirements remain in the source archive linked from the homepage.
+
+The [research practice examples](../notes/reading/Research%20practice.md) offer small, expandable exercises by topic. Check related work and refine a question before treating it as a novel research contribution.
 
 | Idea | Status | Notes |
 | --- | --- | --- |

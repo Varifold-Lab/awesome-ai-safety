@@ -6,7 +6,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: { default: 'Mathematics for AI Safety · Varifold', template: '%s · AI Safety · Varifold' },
-  description: 'Lecture companions, mathematical notes, readings, and research projects for the Fields Institute Mathematics for AI Safety course. A Varifold community learning project.',
+  description: 'Mathematical reading paths through model learning, capabilities, interpretability, and agency. Edited articles, research questions, papers, and complete source materials. A Varifold community learning project.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -17,6 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <div className="header-links"><Search /><a href="https://github.com/Varifold-Lab/awesome-ai-safety">GitHub ↗</a></div>
     </div></header>
     {children}
-    <footer className="site-footer"><span>A Varifold community learning project · Course companions, not official course materials.</span><a href="https://www.fields.utoronto.ca/activities/26-27/SGC-safety">Official course ↗</a></footer>
+    <footer className="site-footer"><span>A Varifold community learning project.</span><Link href="/docs/reading/">Reading guide →</Link></footer>
   </body></html>
 }

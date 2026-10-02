@@ -2,7 +2,7 @@
 
 **Status:** Draft proposal for review  
 **Working title:** Certified Local Effects of Activation Steering in Small Neural Networks  
-**Course connections:** Week 2 (deep learning theory), Week 5 (representation geometry), Week 6 (interpretability and steering), and Week 9 (safety guarantees)
+**Topic connections:** Deep learning theory, representation geometry, interpretability and steering, and safety guarantees
 
 ## Abstract (proposal draft)
 
@@ -22,7 +22,7 @@ The first answer will concern a small ReLU network and a local input region. Any
 
 [Golden Gate Claude](https://www.anthropic.com/news/golden-gate-claude) shows that changing an interpretable activation can visibly alter model behavior. More recent work studies [side effects of activation steering](https://arxiv.org/abs/2608.11227) across behaviors. These motivate a sharper mathematical question: can we state exactly which target and non-target effects an intervention has under explicit assumptions?
 
-This project joins the course's treatment of representation geometry, causal interventions, and formal verification. Its possible contribution is a small, precise account of when steering effects can be certified, when they can be refuted by a counterexample, and when a bound is merely too loose to decide. A literature review is required before claiming this as a novel result.
+This project connects representation geometry, causal interventions, and formal verification. Its possible contribution is a small, precise account of when steering effects can be certified, when they can be refuted by a counterexample, and when a bound is merely too loose to decide. A literature review is required before claiming this as a novel result.
 
 ## Formal setup
 
@@ -73,7 +73,7 @@ The contribution will be evaluated against the existing steering and neural-netw
 | Model and steering | Lean 4 and [TorchLean](https://arxiv.org/abs/2602.22631) | Define and evaluate the small network and hidden-state intervention in one Lean-based environment. |
 | Verification | TorchLean's supported bound and certificate workflows; Lean proofs for the fixed-region argument | Check local output properties and distinguish proof from failed search. |
 | Optional experiment | Synthetic data and Python/PyTorch if useful for plots or a trained-weight extension | Compare steering directions beyond the first exact-weight examples. |
-| Research context | The [course outline](https://www.fields.utoronto.ca/activities/26-27/SGC-safety), [Golden Gate Claude](https://www.anthropic.com/news/golden-gate-claude), [steering side-effect study](https://arxiv.org/abs/2608.11227), and [TorchLean verification documentation](https://lean-dojo.github.io/TorchLean/examples/verification/) | Define the gap and document the tool's trust boundary. |
+| Research context | [Representations and interpretability](../notes/reading/Representations%20and%20interpretability.md), [Golden Gate Claude](https://www.anthropic.com/news/golden-gate-claude), [steering side-effect study](https://arxiv.org/abs/2608.11227), and [TorchLean verification documentation](https://lean-dojo.github.io/TorchLean/examples/verification/) | Define the gap and document the tool's trust boundary. |
 
 TorchLean's examples distinguish candidate output bounds from a theorem about the network's semantics. The proposal will use the word **certified** only when the required soundness argument or checked theorem covers the actual model, graph, weights, arithmetic, input region, and predicate.
 
@@ -83,10 +83,10 @@ The pilot needs basic linear algebra, Lean 4, and familiarity with TorchLean's m
 
 | Stage | Goal | Decision point |
 | --- | --- | --- |
-| Early course | Read the core papers; encode a two-head ReLU network and steering operation in Lean 4/TorchLean. | Are the network and intervention represented with explicit semantics? |
-| Representation and interpretability weeks | Construct steering directions and prove a fixed-activation-region lemma. | Is there a nontrivial target/guard trade-off to explain? |
-| Safety-guarantees week | Prove or check the joint local property for small input boxes; search for counterexamples outside them. | Can any nonzero input radius be certified under explicit soundness assumptions? |
-| Final project | Present the Lean theorem or checked certificate, a counterexample or comparison, and a reproducible example. | Does the result add something beyond existing side-effect measurements and standard verification examples? |
+| Setup and literature review | Read the core papers; encode a two-head ReLU network and steering operation in Lean 4/TorchLean. | Are the network and intervention represented with explicit semantics? |
+| Geometry and intervention | Construct steering directions and prove a fixed-activation-region lemma. | Is there a nontrivial target/guard trade-off to explain? |
+| Verification | Prove or check the joint local property for small input boxes; search for counterexamples outside them. | Can any nonzero input radius be certified under explicit soundness assumptions? |
+| Reporting | Present the Lean theorem or checked certificate, a counterexample or comparison, and a reproducible example. | Does the result add something beyond existing side-effect measurements and standard verification examples? |
 
 If steering has no useful range in the first task, simplify the data or network and explain why. If interval bounds cannot certify a property that empirical search suggests is true, compare tighter bounds or exact enumeration on an even smaller network. These outcomes can still identify a meaningful limitation of the method.
 
@@ -95,7 +95,7 @@ If steering has no useful range in the first task, simplify the data or network 
 - A concise report with the formal property, literature comparison, method, results, and limitations.
 - Reproducible Lean code, exact model weights, intervention parameters, and a fixed list of evaluation inputs.
 - At least one certified example or an explicit counterexample, with a clear distinction between the two.
-- A short presentation suitable for the course's project weeks.
+- A short presentation of the question, result, reproducibility package, and limitations.
 
 ## Open questions for review
 
